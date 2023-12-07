@@ -31,7 +31,7 @@ def users_input():
 
 
 
-def choose_step(choice):
+def choose_step(input_result):
     """
     Function to choose between demo and play
 
@@ -51,16 +51,18 @@ def main():
     """
     display_welcome_messages()
     users_input()
-    choose_step()
+    choose_step("choice")
     
     
 
+print("")
+print("")
 # print the title of the game in capital letters
 text = "Find a mysterious word in five steps"
 print(text.upper())
 print("")
 print("")
-print("")
+
 
 main()
 
