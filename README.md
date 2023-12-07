@@ -4,6 +4,8 @@
 If you enjoy solving mysteries, you're in the right place. Allow me to present a game where the main task is to uncover mysterious words. To succeed, a clue will be displayed on the screen. Enter your answer, and you'll either receive confirmation that your answer is correct, or you'll move on to the next clue. In case you don't succeed the first time, fear not — the correct answer will be revealed.
 This game features a total of five mysterious words.
 
+INSPIRATION FOR THIS GAME CAME FROM THE POPULAR SERBIAN QUIZ SCHOW "SLAGALICA"
+
 ![Terminal_photos](/assets/images/terminal_1.png)
 
 ## User Experience:
@@ -62,7 +64,7 @@ source code: David Gray: https://www.youtube.com/watch?v=qwAFL1597eM&t=23215sg
 
 - PowerPoint
 
-- 
+- Tutorial no. 6 from [Python Full Course for free ](https://www.youtube.com/watch?v=XKHEtdqhLK8 "Python Full Course for free ") from Bro Code used for coding of input section.
 
 
 
@@ -70,8 +72,10 @@ source code: David Gray: https://www.youtube.com/watch?v=qwAFL1597eM&t=23215sg
 ## Debuging and Refactoring
 - Exceptions raised in the Terminal used to locate the mistakes and refactor the code.
     For instance, scope issue solved by introducing "return choice" in users_input function and passing "choice" argument into the choose_step function
+
     
     ![Name Error](/assets/images/Name_Error.png)
+    
     ![Type Error](/assets/images/Type_Error.png)
 
 ## Deployment

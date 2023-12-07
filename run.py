@@ -3,7 +3,7 @@
 # Write your code to expect a terminal of 80 characters wide
 # and 24 rows high
 
-import sys
+#import sys
 """ 
 import exit system function to be used the user chose to exit the game
 
@@ -29,9 +29,10 @@ def users_input():
     print("")
     return choice
 
+# add option where the user get the notification that she/he used the wrong data type
 
 
-def choose_step(input_result):
+def choose_step(choice):
     """
     Function to choose between demo and play
 
@@ -51,7 +52,7 @@ def main():
     """
     display_welcome_messages()
     users_input()
-    choose_step("choice")
+    choose_step(choice)
     
     
 
