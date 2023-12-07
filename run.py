@@ -25,7 +25,7 @@ def display_welcome_messages():
 
 def users_input():
     print("")
-    choice = input("Type 'd' to see the demo or type 'p' to play the game!").lower()
+    choice = input("Type 'd' to see the demo or type 'p' to play the game!\n").lower()
     print("")
     return choice
 
