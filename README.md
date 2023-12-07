@@ -57,6 +57,8 @@ source code: David Gray: https://www.youtube.com/watch?v=qwAFL1597eM&t=23215sg
 -[Markdown - editor](https://markdown-editor.github.io/ "Markdown - editor") used for the creation of the Readme.md file
 
 - [Python Checker](https://www.pythonchecker.com/ "Python Checker") used to style the code according to the [PEP 8](http:/https://peps.python.org/pep-0008// "PEP 8") standards
+        Issue of 79 characters per line signaled
+![Python Checker](/assets/images/pythonchecker.png)
 
 - PowerPoint
 

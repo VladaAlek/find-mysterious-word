@@ -21,9 +21,11 @@ def display_welcome_messages():
     print("you will get more signs to guide you to the victory.")
 
 # User input
+
+
 def users_input():
     print("")
-    choice = input("Do you want to see the demo (type 'd') or play the game (type 'p')? ").lower()
+    choice = input("Type 'd' to see the demo or type 'p' to play the game!").lower()
     print("")
     return choice
 
