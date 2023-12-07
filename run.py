@@ -20,12 +20,36 @@ def display_welcome_messages():
     print("Don't worry if you don't guess from the first attempt;")
     print("you will get more signs to guide you to the victory.")
 
+# User input
+def users_input():
+    print("")
+    choice = input("Do you want to see the demo (type 'd') or play the game (type 'p')? ").lower()
+    print("")
+    return choice
+
+
+
+def choose_step(choice):
+    """
+    Function to choose between demo and play
+
+    """
+    if choice == 'd':
+        display_intro()
+        click_g()  # Show the "Click g to start the game!" message after the demo
+    else:
+        print("Let's start the game!")
+        game_start()
+
+
 
 def main():
     """
     Run all program functions
     """
     display_welcome_messages()
+    users_input()
+    choose_step()
     
     
 
