@@ -79,7 +79,12 @@ def display_intro():
     print("When ripe, it is yellow and curved.")
     print()
     print("Answer: banana")
-    print("Congratulations, banana is the correct answer!")
+    print("")
+    print("")
+    banana_text = "Congratulations, banana is the correct answer!"
+    print(banana_text.upper())
+    print("")
+    print("")
 
 
 # Function to print "Click g to start the game!" text if the user does not choose "g"
