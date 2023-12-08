@@ -102,8 +102,8 @@ def users_input_start_game():
 def click_game(start_game_choice):
     if start_game_choice == "g":
         game_start()
-    else:
-        click_g()
+    #else:
+        
 
 
 def main():
