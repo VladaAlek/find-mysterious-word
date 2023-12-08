@@ -29,6 +29,7 @@ def users_input():
     print("")
     return choice
 
+
 # add option where the user get the notification that she/he used the wrong data type
 
 # Start game function
@@ -38,7 +39,6 @@ def game_start():
 def choose_step(choice):
     """
     Function to choose between demo and play
-
     """
     if choice == 'd':
         display_intro()
@@ -81,12 +81,20 @@ def display_intro():
     print("Answer: banana")
     print("Congratulations, banana is the correct answer!")
 
+
 # Function to print "Click g to start the game!" text if the user does not choose "g"
 def click_g():
     print("Click g to start the game!")
 
+# Store user's choice to start the game
+
+def users_input_start_game(): 
+    start_game_choice = input("Click g to start the game!\n").lower()
+    return start_game_choice
+
+
 # Function to start the game from the demo field
-def click_game():
+def click_game(start_game_choice):
     if start_game_choice == "g":
         game_start()
     else:
@@ -100,7 +108,8 @@ def main():
     display_welcome_messages()
     choice = users_input()
     choose_step(choice)
-    click_game()    
+    start_game_choice = users_input_start_game()  # Get user input for starting the game
+    click_game(start_game_choice)    
     
 
 print("")
