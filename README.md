@@ -97,9 +97,12 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
     ![Missing Function](/assets/images/name_error_click_g.PNG)
 
 - Python Tutor used to monitor the execution of the python commands
+
     ![Python Tutor](/assets/images/python_tutor.PNG)
 
-- 
+- teporarelly introduced print function used to control the flow of the command lines
+
+     ![Print Function](/assets/images/using_print_function.PNG)
 
 ## Deployment
 
