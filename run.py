@@ -14,7 +14,7 @@ def display_welcome_messages():
     """
     Welcoming message function
     """
-    print("Welcome to our guessing the mysterious word game!")
+    print("Welcome to our guessing the mysterious word game! \U0001F60E")
     print("Follow 5 clues by filling up the input fields one after another")
     print("to find out the mysterious term.")
     print("Don't worry if you don't guess from the first attempt;")
@@ -54,25 +54,25 @@ def display_intro():
     print("It is a fruit!")
     print()
     print("Answer: mango")
-    print("Sorry, mango is not the correct answer!")
+    print("Sorry, mango is not the correct answer!🤨")
     print()
     
     print("It is a very common fruit!")
     print()
     print("Answer: apple")
-    print("Sorry, apple is not the correct answer!")
+    print("Sorry, apple is not the correct answer!🤨")
     print()
     
     print("It takes a lot of sun to raise this fruit.")
     print()
     print("Answer: orange")
-    print("Sorry, orange is not the correct answer!")
+    print("Sorry, orange is not the correct answer!🤨")
     print()
     
     print("This fruit is slippery.")
     print()
     print("Answer: kiwi")
-    print("Sorry, kiwi is not the correct answer!")
+    print("Sorry, kiwi is not the correct answer!🤨")
     print()
     
     print("When ripe, it is yellow and curved.")
@@ -80,7 +80,7 @@ def display_intro():
     print("Answer: banana")
     print("")
     print("")
-    banana_text = "Congratulations, banana is the correct answer!"
+    banana_text = " 🙌 Congratulations, banana is the correct answer!"
     print(banana_text.upper())
     print("")
     print("")
