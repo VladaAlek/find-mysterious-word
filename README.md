@@ -82,8 +82,14 @@ source code: David Gray: https://www.youtube.com/watch?v=qwAFL1597eM&t=23215sg
     
     ![Type Error](/assets/images/Type_Error.png)
 
+    Later, the same approach used to understand which funcion was missing to complete the workflow of the command lines
+
+    ![Missing Function](/assets/images/name_error_click_g.PNG)
+
 - Python Tutor used to monitor the execution of the python commands
     ![Python Tutor](/assets/images/python_tutor.PNG)
+
+- 
 
 ## Deployment
 
