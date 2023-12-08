@@ -62,6 +62,10 @@ source code: David Gray: https://www.youtube.com/watch?v=qwAFL1597eM&t=23215sg
         Issue of 79 characters per line signaled
 ![Python Checker](/assets/images/pythonchecker.png)
 
+[Python Tutor](https://pythontutor.com/render.html#mode=display "Python Tutor") used to monitor the execution of the python commands. See Debuging and Refactoring section bellow. 
+
+
+
 - PowerPoint
 
 - Tutorial no. 6 from [Python Full Course for free ](https://www.youtube.com/watch?v=XKHEtdqhLK8 "Python Full Course for free ") from Bro Code used for coding of input section.
@@ -77,6 +81,9 @@ source code: David Gray: https://www.youtube.com/watch?v=qwAFL1597eM&t=23215sg
     ![Name Error](/assets/images/Name_Error.png)
     
     ![Type Error](/assets/images/Type_Error.png)
+
+- Python Tutor used to monitor the execution of the python commands
+    ![Python Tutor](/assets/images/python_tutor.PNG)
 
 ## Deployment
 
