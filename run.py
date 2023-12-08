@@ -42,7 +42,6 @@ def choose_step(choice):
     """
     if choice == 'd':
         display_intro()
-        click_g()  # Show the "Click g to start the game!" message after the demo
     else:
         print("Let's start the game!")
         game_start()
@@ -102,8 +101,8 @@ def users_input_start_game():
 def click_game(start_game_choice):
     if start_game_choice == "g":
         game_start()
-    #else:
-        
+    else:
+        click_g()
 
 
 def main():
