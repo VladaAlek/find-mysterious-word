@@ -30,8 +30,9 @@ The user can choose between:
 At the end of the cycle of questions for the five mysterious concepts, the user exits the game by typing **"e."**
 
 ## Visual elements
-in several ocasions the emoticons have been used
-source code: David Gray: https://www.youtube.com/watch?v=qwAFL1597eM&t=23215sg
+EMOTICONS
+ - Inspiration for the introduction of emoticons came from [Python Tutorial for Beginners (with mini-projects)](https://www.youtube.com/watch?v=qwAFL1597eM "Python Tutorial for Beginners (with mini-projects)")
+ - source for the [Emoticons](https://beta.emojipedia.org/ "Emoticons")
 
 ![Prototyp - Algorithm](/assets/images/algorithm.png)
 
