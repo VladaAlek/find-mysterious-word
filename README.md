@@ -73,7 +73,15 @@ source code: David Gray: https://www.youtube.com/watch?v=qwAFL1597eM&t=23215sg
 
 
 ## Product Testing
+
+- The content of the terminal output has been checked constantly to find unwanted features. In this example, display_intro() function called two times:
+
+   ![Display Intro](/assets/images/product_testing.PNG)
+
+The issue resolved by deleting the nested display_intro() from the main().
+
 ## Debuging and Refactoring
+
 - Exceptions raised in the Terminal used to locate the mistakes and refactor the code.
     For instance, scope issue solved by introducing "return choice" in users_input function and passing "choice" argument into the choose_step function
 

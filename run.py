@@ -90,7 +90,6 @@ def main():
     display_welcome_messages()
     choice = users_input()
     choose_step(choice)
-    display_intro()
     
     
 
