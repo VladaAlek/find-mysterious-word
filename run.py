@@ -45,14 +45,48 @@ def choose_step(choice):
         game_start()
 
 
+# Intro display function
+
+
+def display_intro():
+    print("It is a fruit!")
+    print()
+    print("Answer: mango")
+    print("Sorry, mango is not the correct answer!")
+    print()
+    
+    print("It is a very common fruit!")
+    print()
+    print("Answer: apple")
+    print("Sorry, apple is not the correct answer!")
+    print()
+    
+    print("It takes a lot of sun to raise this fruit.")
+    print()
+    print("Answer: orange")
+    print("Sorry, orange is not the correct answer!")
+    print()
+    
+    print("This fruit is slippery.")
+    print()
+    print("Answer: kiwi")
+    print("Sorry, kiwi is not the correct answer!")
+    print()
+    
+    print("When ripe, it is yellow and curved.")
+    print()
+    print("Answer: banana")
+    print("Congratulations, banana is the correct answer!")
+
 
 def main():
     """
     Run all program functions
     """
     display_welcome_messages()
-    users_input()
+    choice = users_input()
     choose_step(choice)
+    display_intro()
     
     
 
