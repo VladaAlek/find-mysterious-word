@@ -80,6 +80,8 @@ source code: David Gray: https://www.youtube.com/watch?v=qwAFL1597eM&t=23215sg
 
 The issue resolved by deleting the nested display_intro() from the main().
 
+Comment: Vladimir to check p/g/n and similar in the algorithm, functions and game description.
+
 ## Debuging and Refactoring
 
 - Exceptions raised in the Terminal used to locate the mistakes and refactor the code.

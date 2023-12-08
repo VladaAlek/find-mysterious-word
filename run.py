@@ -31,6 +31,9 @@ def users_input():
 
 # add option where the user get the notification that she/he used the wrong data type
 
+# Start game function
+def game_start():
+    print("Usually, it is all around us!")
 
 def choose_step(choice):
     """
@@ -82,6 +85,13 @@ def display_intro():
 def click_g():
     print("Click g to start the game!")
 
+# Function to start the game from the demo field
+def click_game():
+    if start_game_choice == "g":
+        game_start()
+    else:
+        click_g()
+
 
 def main():
     """
@@ -90,7 +100,7 @@ def main():
     display_welcome_messages()
     choice = users_input()
     choose_step(choice)
-    
+    click_game()    
     
 
 print("")
