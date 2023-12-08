@@ -78,6 +78,10 @@ def display_intro():
     print("Answer: banana")
     print("Congratulations, banana is the correct answer!")
 
+# Function to print "Click g to start the game!" text if the user does not choose "g"
+def click_g():
+    print("Click g to start the game!")
+
 
 def main():
     """
