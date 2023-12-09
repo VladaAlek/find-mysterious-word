@@ -3,7 +3,7 @@
 # Write your code to expect a terminal of 80 characters wide
 # and 24 rows high
 
-#import sys
+import sys
 """ 
 import exit system function to be used the user chose to exit the game
 
@@ -25,7 +25,7 @@ def display_welcome_messages():
 
 def users_input():
     print("")
-    choice = input("Type 'd' to see the demo or type 'p' to play the game!\n").lower()
+    choice = input("Type 'd' to see the demo, 'g' to play, or 'e' to exit!\n").lower()
     print("")
     return choice
 
@@ -36,15 +36,30 @@ def users_input():
 def game_start():
     print("Usually, it is all around us!")
 
+def exit_game():
+    """
+    function to exit the game while thanking the user
+    code origin: 
+    https://github.com/gitdagray/python-course/blob/main/lesson12/rps5.py
+    lines 78-80
+    """
+    print("\n🎉🎉🎉🎉")
+    print("Thank you for playing!\n")
+    sys.exit("Bye! 👋")
+
 def choose_step(choice):
     """
     Function to choose between demo and play
     """
     if choice == 'd':
         display_intro()
+    elif choice == "e":
+        exit_game()
     else:
         print("Let's start the game!")
         game_start()
+
+
 
 
 # Intro display function
@@ -127,4 +142,3 @@ print("")
 
 main()
 
-# sys.exit()
