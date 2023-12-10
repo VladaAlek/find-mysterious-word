@@ -60,12 +60,21 @@ def choose_step(choice):
         game_start()
 
 
-
-
-# Intro display function
-
+def click_game(start_game_choice):
+        """
+        Function to start the game from the demo field
+        """
+        print("Type 'g' to play, or any button to exit!\n")
+        if start_game_choice == "g":
+            game_start()
+        elif start_game_choice != "g":
+            exit_game()
+    
 
 def display_intro():
+    """
+    Intro display function
+    """
     print("It is a fruit!")
     print()
     print("Answer: mango")
@@ -100,24 +109,26 @@ def display_intro():
     print("")
     print("")
 
+    start_game_choice = input("Type 'g' to play, or any button to exit!\n").lower()
+    click_game(start_game_choice)
+    
+    print("")
+    print("")
 
-# Function to print "Click g to start the game!" text if the user does not choose "g"
+
 def click_g():
-    print("Click g to start the game!")
+    """
+    Function to print "Click g to start the game!" text if the user does not choose "g"
+    """
+    #print("Click g to start the game!")
 
-# Store user's choice to start the game
 
-def users_input_start_game(): 
+def users_input_start_game():
+    """
+    Store user's choice to start the game
+    """ 
     start_game_choice = input("Click g to start the game!\n").lower()
     return start_game_choice
-
-
-# Function to start the game from the demo field
-def click_game(start_game_choice):
-    if start_game_choice == "g":
-        game_start()
-    else:
-        click_g()
 
 
 def main():
@@ -128,7 +139,6 @@ def main():
     choice = users_input()
     choose_step(choice)
     start_game_choice = users_input_start_game()  # Get user input for starting the game
-    click_game(start_game_choice)    
     
 
 print("")

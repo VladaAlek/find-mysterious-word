@@ -85,6 +85,9 @@ The issue resolved by deleting the nested display_intro() from the main().
    
    ![Display Intro](/assets/images/product_testing_2.PNG)
 
+   The same as here:
+   ![wrong Function Called](/assets/images/product_testing_3.PNG)
+
 Comment: Vladimir to check p/g/n and similar in the algorithm, functions and game description.
 
 ## Debuging and Refactoring
@@ -101,6 +104,11 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 
     ![Missing Function](/assets/images/name_error_click_g.PNG)
 
+    The same tool is an efficient syntax error indicator.
+
+    ![Synthax Errors](/assets/images/synthax_error.png)
+
+
 - Python Tutor used to monitor the execution of the python commands
 
     ![Python Tutor](/assets/images/python_tutor.PNG)
@@ -109,7 +117,17 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 
      ![Print Function](/assets/images/using_print_function.PNG)
 
+- Problems indicator, built-in function of Codeanywhere used 
+
+    ![Problem Indicator](/assets/images/problems.PNG.jpg)
+    
+
 ## Deployment
+ - external coding
+ - problems with Heroku
+ - Codeanywhere unreliability - limited option to git push 
+    -  ![Codeanywhere Unreliability ](/assets/images/codeanywhere_unreliability%20.jpg)
+
 
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
