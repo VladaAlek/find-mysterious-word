@@ -33,8 +33,9 @@ def users_input():
 # add option where the user get the notification that she/he used the wrong data type
 
 # Start game function
-def game_start():
-    print("Usually, it is all around us!")
+#def game_start():
+    # Call the function to start the game
+    #play_game()
 
 def exit_game():
     """
@@ -57,7 +58,7 @@ def choose_step(choice):
         exit_game()
     else:
         print("Let's start the game!")
-        game_start()
+        play_game()
 
 
 def click_game(start_game_choice):
@@ -66,7 +67,7 @@ def click_game(start_game_choice):
         """
         print("Type 'g' to play, or any button to exit!\n")
         if start_game_choice == "g":
-            game_start()
+            play_game()
         elif start_game_choice != "g":
             exit_game()
     
@@ -129,6 +130,25 @@ def users_input_start_game():
     """ 
     start_game_choice = input("Click g to start the game!\n").lower()
     return start_game_choice
+
+clues_1 = ['It is a city.', 'It is a capital city!', '…somewhere in Europe.', 'It has Spanish Steps.', 'and Colosseum.', 'Rome']
+
+def play_game():
+    for clue in clues_1:
+        print(clue)
+        clue_answer = input("Please, type your answer here!\n").lower()
+        
+        if clue_answer == 'rome':
+            print("Correct Answer")
+            # Here you can call the function for the next game or perform any other action
+            break
+        else:
+            print("Sorry, wrong answer, keep trying!")
+
+
+    
+
+
 
 
 def main():

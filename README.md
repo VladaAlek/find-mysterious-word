@@ -152,10 +152,15 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
     1. problems with Heroku - to be elaborated 
 - 
 
+### Acknowledgments
+
+- Mentor Narender Singh
+- Sarah, Roman, John and Oisin from CI Tutor Team :-)
+
  
 
 
-
+*******************************************************
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome,
