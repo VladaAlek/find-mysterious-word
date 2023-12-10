@@ -139,13 +139,20 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 - Problems indicator, built-in function of Codeanywhere used 
 
     ![Problem Indicator](/assets/images/problems.PNG.jpg)
-    
+
+- Staging and Pushing Issues in [Git](https://github.com/git-guides) 
+
+    -  ![Staging and Pushing Issues](/assets/images/codeanywhere_unreliability%20.jpg)
+    -  ![Staging and Pushing Solution](/assets/images/tutor_support.png)
+       
 
 ## Deployment
- - external coding
- - problems with Heroku
- - Codeanywhere unreliability - limited option to git push 
-    -  ![Codeanywhere Unreliability ](/assets/images/codeanywhere_unreliability%20.jpg)
+- Readme.md file deploied in [GitHub](https://github.com/ "GitHub")
+- Python code from the run.py file deploied in [Heroku](https://www.heroku.com/)
+    1. problems with Heroku - to be elaborated 
+- 
+
+ 
 
 
 
