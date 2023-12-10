@@ -140,11 +140,11 @@ def play_game():
         clue_answer = input("Please, type your answer here!\n").lower()
         
         if clue_answer == 'rome':
-            print("Congratulations, " + clue_answer + " is the correct answer!")
+            print("Congratulations, " + clue_answer.capitalize() + " is the correct answer!")
             # Here you can call the function for the next game or perform any other action
             break
         else:
-            print("Sorry, " + clue_answer + " is the wrong answer. Keep trying!")
+            print("Sorry, " + clue_answer.capitalize() + " is the wrong answer. Keep trying!")
 
     # If the loop completes without a correct answer, provide the correct answer
     else:
