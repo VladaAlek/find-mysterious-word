@@ -42,7 +42,10 @@ EMOTICONS
  - Inspiration for the introduction of emoticons came from [Python Tutorial for Beginners (with mini-projects)](https://www.youtube.com/watch?v=qwAFL1597eM "Python Tutorial for Beginners (with mini-projects)")
  - source for the [Emoticons](https://beta.emojipedia.org/ "Emoticons")
 
-## Further project´s development
+## Further Project´s Development
+
+####
+ - provide the user with the explanation regarding the clues and answer after for the each of five misterious words 
 
 #### Timer
 - The user has a limited time to provide an answer to each of the offered clues. The remaining time is displayed through a countdown in the terminal.
