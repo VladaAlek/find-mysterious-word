@@ -142,8 +142,9 @@ def play_game():
             print("Correct Answer")
             # Here you can call the function for the next game or perform any other action
             break
+            click_game(start_game_choice)
         else:
-            print("Sorry, wrong answer, keep trying!")
+            print("Sorry, " + clue_answer + " is wrong answer, keep trying!")
 
 
     

@@ -45,7 +45,13 @@ EMOTICONS
 ## Further Project´s Development
 
 ####
- - provide the user with the explanation regarding the clues and answer after for the each of five misterious words 
+ - provide the user with the explanation regarding the clues and answer after for the each of five misterious words
+
+####
+ - provide the user with report about entering unacceptable data type
+
+ ####
+ - provide the user how many tries have left before the game conclusion
 
 #### Timer
 - The user has a limited time to provide an answer to each of the offered clues. The remaining time is displayed through a countdown in the terminal.
@@ -106,6 +112,12 @@ The issue resolved by deleting the nested display_intro() from the main().
    The same as here:
    
    ![wrong Function Called](/assets/images/product_testing_3.PNG)
+
+
+Confusing instrictions noticed in the first version of the play_game function
+
+    ![Confusing Aswers](/assets/images/confusing_aswers.PNG)
+
 
 Comment: Vladimir to check p/g/n and similar in the algorithm, functions and game description.
 
