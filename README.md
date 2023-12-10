@@ -72,16 +72,19 @@ EMOTICONS
 - [Markdown - editor](https://markdown-editor.github.io/ "Markdown - editor") used for the creation of the Readme.md file
 
 - [Python Checker](https://www.pythonchecker.com/ "Python Checker") used to style the code according to the [PEP 8](http:/https://peps.python.org/pep-0008// "PEP 8") standards
-        Issue of 79 characters per line signaled
+
+    Issue of 79 characters per line signaled
+
 ![Python Checker](/assets/images/pythonchecker.png)
 
 [Python Tutor](https://pythontutor.com/render.html#mode=display "Python Tutor") used to monitor the execution of the python commands. See Debuging and Refactoring section bellow. 
 
 
-
 - PowerPoint
 
 - Tutorial no. 6 from [Python Full Course for free ](https://www.youtube.com/watch?v=XKHEtdqhLK8 "Python Full Course for free ") from Bro Code used for coding of input section.
+
+- David Gray - enter the comment here later
 
 
 
@@ -98,6 +101,7 @@ The issue resolved by deleting the nested display_intro() from the main().
    ![Display Intro](/assets/images/product_testing_2.PNG)
 
    The same as here:
+   
    ![wrong Function Called](/assets/images/product_testing_3.PNG)
 
 Comment: Vladimir to check p/g/n and similar in the algorithm, functions and game description.
