@@ -57,7 +57,8 @@ def choose_step(choice):
     elif choice == "e":
         exit_game()
     else:
-        print("Let's start the game!")
+        print("Let's start the game!".upper()) # check this code, use python tutor
+        print("")
         play_game()
 
 
@@ -131,7 +132,7 @@ def users_input_start_game():
     start_game_choice = input("Click g to start the game!\n").lower()
     return start_game_choice
 
-clues_1 = ['It is a city.', 'It is a capital city!', '…somewhere in Europe.', 'It has Spanish Steps.', 'and Colosseum.', 'Rome']
+clues_1 = ['It is a city.', 'It is a capital city!', '…somewhere in Europe.', 'It has Spanish Steps.', '...and Colosseum.', 'Rome']
 
 def play_game():
     for clue in clues_1:
@@ -139,17 +140,15 @@ def play_game():
         clue_answer = input("Please, type your answer here!\n").lower()
         
         if clue_answer == 'rome':
-            print("Correct Answer")
+            print("Congratulations, " + clue_answer + " is the correct answer!")
             # Here you can call the function for the next game or perform any other action
             break
-            click_game(start_game_choice)
         else:
-            print("Sorry, " + clue_answer + " is wrong answer, keep trying!")
+            print("Sorry, " + clue_answer + " is the wrong answer. Keep trying!")
 
-
-    
-
-
+    # If the loop completes without a correct answer, provide the correct answer
+    else:
+        print("Sorry, Rome was the correct answer.")
 
 
 def main():
