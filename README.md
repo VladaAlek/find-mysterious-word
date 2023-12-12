@@ -114,7 +114,7 @@ The issue resolved by deleting the nested display_intro() from the main().
    ![wrong Function Called](/assets/images/product_testing_3.PNG)
 
 
-Confusing instrictions noticed in the first version of the play_game function
+Confusing instructions noticed in the first version of the play_game function
 
     ![Confusing Instruction](/assets/images/confusing_aswers.PNG)
 
@@ -122,7 +122,7 @@ Confusing answers notices in the last step of the play_game function
 
     ![Confusing Last Answer](/assets/images/wrong_final_answer.PNG)
 
-Need to capitalize leters of the cities in the answers
+Obervation that the leters of the cities in the answers should be capitalized
 
     ![Capitalized Names](/assets/images/capitalize.PNG)
 
