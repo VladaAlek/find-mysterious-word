@@ -165,6 +165,20 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
     -  ![Staging and Pushing Issues](/assets/images/codeanywhere_unreliability%20.jpg)
     -  ![Staging and Pushing Solution](/assets/images/tutor_support.png)
        
+## Testing User Stories from the UX Section
+
+#### First-Time Visitor Goals
+
+- As a first-time visitor, clarity and quick understanding are paramount. Right off the bat, the ....to be elaborated
+
+- *issues noticed:* Capitalization of the first letter in the answers, for instance "Rome" is not required in all games. It causes situations in which some words start with the capital letter unnecessarily. Hence, the user can expect the results like "Hammer", instead of "hammer".
+
+#### Returning and Frequent Visitor Goals
+
+ - Second-time and multiple-return users may find it not interesting to play again since they already know the correct answers. 
+ 
+ - Secondary usage: However, the users can redisign and reuse this product as a learning material for educational purposes, especially if all groups of questions are closely related to the specific question - for instance, geography, history.
+
 
 ## Deployment
 - Readme.md file deploied in [GitHub](https://github.com/ "GitHub")
