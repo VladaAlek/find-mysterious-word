@@ -24,21 +24,17 @@ def display_welcome_messages():
 
 
 def users_input():
-    print("")
-    choice = input("Type 'd' to see the demo, 'g' to play, or 'e' to exit!\n").lower()
-    print("")
-    return choice
-
- """try:
-        start_game_choice = input("Click g to start the game!\n").lower()
-        if start_game_choice == "g":
-            return start_game_choice
-        else:
-            ValueError("Invalid input. Please enter 'g'.")
+    try:
+        print("")
+        choice = input("Type 'd' to see the demo, 'g' to play, or 'e' to exit!\n").lower()
+        if choice not in ["g", "d", "e"]:
+            raise ValueError("Invalid input. Please enter 'g', 'd', or 'e'.")
     except ValueError as e:
-            print(f"Error: {e}")
-
-"""
+        print(f"Error: {e}")
+        # You might want to handle the error or exit the program here
+        # For now, let's re-raise the exception
+        raise e
+    return choice
 
 # add option where the user get the notification that she/he used the wrong data type
 
@@ -134,19 +130,18 @@ def click_g():
     """
     #print("Click g to start the game!")
 
-
 def users_input_start_game():
     """
     Store user's choice to start the game
-    """ 
+    """
     try:
         start_game_choice = input("Click g to start the game!\n").lower()
         if start_game_choice == "g":
             return start_game_choice
         else:
-            ValueError("Invalid input. Please enter 'g'.")
+            raise ValueError("Invalid input. Please enter 'g'.")
     except ValueError as e:
-            print(f"Error: {e}")
+        print(f"Error: {e}")
 
 # each list of strings contains the clues and answers for one game
 

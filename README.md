@@ -17,11 +17,18 @@ The user familiarizes themselves with the project content in two ways:
 - *Title:* Its significance is emphasized by using capital letters.
 -  *Explanation*: A concise explanation guides the user into the essence of the project and explains how to use it.
 
-**Demo or Game**
+**Demo, Game or Exit**
 
-In the next step, the user has the option to choose between two possibilities:
+In the next step, the user has the option to choose between three possibilities.
+
+To indicate users typo mistakes, the exception with the text "Type 'd' to see the demo, 'g' to play, or 'e' to exit!" 
+will be raised when non of these three letter entered
+
+    - ![Exceptions](/assets/images/wrong_value_input.png)
+
+- The user can directly initiate the game by typing **"g."**
+- Alternatively, it is possible to exit the game **"e"**.
 - By typing **"d"** for Demo, they go to the page with a demo example. After becoming more familiar with the game rules, the user can start the actual game by typing **"g"** for "Game" or exit the program by typing any other key on the keybord for "Exit."
-- Alternatively, the user can directly initiate the game by typing **"g."**
 
 **Game Flow**
 
