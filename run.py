@@ -144,58 +144,47 @@ clues_2=[ 'It is a tool.', 'It is a very common tool in many trades.',
 # correct answers values
 
 clue_sets = [
-
-    {'clues': clues_1, 'correct_answer': 'rome'},
-
-    {'clues': clues_2, 'correct_answer': 'hammer'}
-
+    {'clues': clues_1, 'correct_answer': 'rome', 'explanation': 'Rome is the capital city of Italy (Europe), famous for its beautiful historical architecture (https://en.wikipedia.org/wiki/Spanish_Steps). Probably the most famous building is the Roman Colosseum.'},
+    {'clues': clues_2, 'correct_answer': 'hammer', 'explanation': 'A hammer is a tool used for driving nails, breaking objects, or forging metal. It is a versatile tool with a wide range of applications.'}
 ]
 
-
 def play_game():
-    """.devcontainer/
-    function to execute the gaim
-    """
-    # for loop to iterate through dictionary and return clues and correct anwers
+    """Function to execute the game."""
+    # For loop to iterate through the dictionary and return clues 
+    # and correct answers
     for game_data in clue_sets:
-        # variables to store the values for clues and correct answers 
-        # from the dictionary 
+        # Variables to store the values for clues, correct answers, 
+        # and explanation from the dictionary
         clues = game_data['clues']
-
         correct_answer = game_data['correct_answer']
+        explanation = game_data.get('explanation', 'No explanation available.')
 
-        # nested loop to iterate and print the clues
+        # Nested loop to iterate and print the clues
         for clue in clues:
-
             print(clue)
-            # creates variable to store the input values and transform them into lower letters
+            # Creates a variable to store the input values and transform them
+            # into lowercase letters
             clue_answer = input("Please, type your answer here!\n").lower()
 
-            # if statement to compare the users input with the correct answer
+            # If statement to compare the user's input with the correct answer
             if clue_answer == correct_answer:
-                # print "Congratulation" message and capitalize first letter
-                print("Congratulations, " + clue_answer.capitalize() + " is the correct answer!")
-                print(f"{correct_answer.capitalize()} is the capital city of Italy (Europe), famous for its beautiful historical "
-                  "architecture (https://en.wikipedia.org/wiki/Spanish_Steps). Probably the most famous building is the Roman Colosseum!")
+                # Print "Congratulations" message and capitalize the first letter
+                print(f"Congratulations, {clue_answer.capitalize()} is the correct answer!")
+                # Print the custom explanation for the correct answer
+                print(explanation)
 
-                # stop further iteration as the correct answer has been 
-                # provided
-
+                # Stop further iteration as the correct answer 
+                # has been provided
                 break
-            # else statement for the if statement
+            # Else statement for the if statement
             else:
+                print(f"Sorry, {clue_answer.capitalize()} is the wrong answer. Keep trying!")
 
-                print("Sorry, " + clue_answer.capitalize() + " is the wrong answer. Keep trying!")
-
-
-        # else statement for the for loop activated when the correct answer  
-        # has not been provided
+        # Else statement for the for loop activated when the correct answer has not been provided
         else:
-
             print(f"Sorry, {correct_answer.capitalize()} was the correct answer.")
-            print(f"{correct_answer.capitalize()} is the capital city of Italy (Europe), famous for its beautiful historical "
-                  "architecture (https://en.wikipedia.org/wiki/Spanish_Steps). Probably the most famous building is the Roman Colosseum!")
-
+            # Print the default explanation for the correct answer
+            print(explanation)
 
 
 def main():

@@ -28,6 +28,9 @@ In the next step, the user has the option to choose between two possibilities:
 The terminal displays the first clue to the mysterious concept and provides instructions to enter an answer.
 - *Incorrect Answer:* The user receives a notification about the  incorrect answer and moves on to the next clue.
 - *Correct Answer:* The user receives a notification about the correct answer.
+
+- *explanation* the user is provided with the interpretation regarding the clues and answer after failing or cucciding to give the correct answer
+
 The user can choose between:
 1. Starting a new game by typing **"n"** for "New Game!"— a new set of questions appears on the screen.
 2. Exiting the game by typing **"e"** for "Exit."
@@ -43,9 +46,6 @@ EMOTICONS
  - source for the [Emoticons](https://beta.emojipedia.org/ "Emoticons")
 
 ## Further Project´s Development
-
-####
- - provide the user with the explanation regarding the clues and answer after for the each of five misterious words
 
 ####
  - provide the user with report about entering unacceptable data type
