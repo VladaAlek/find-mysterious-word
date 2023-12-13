@@ -29,6 +29,16 @@ def users_input():
     print("")
     return choice
 
+ """try:
+        start_game_choice = input("Click g to start the game!\n").lower()
+        if start_game_choice == "g":
+            return start_game_choice
+        else:
+            ValueError("Invalid input. Please enter 'g'.")
+    except ValueError as e:
+            print(f"Error: {e}")
+
+"""
 
 # add option where the user get the notification that she/he used the wrong data type
 

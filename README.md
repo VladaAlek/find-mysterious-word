@@ -134,6 +134,10 @@ Mistake in clues_1 list causes the inconsistancy when print function activated
 
     ![Mistake in clues_1 List](/assets/images/string_list_mistake.png)
 
+Game initiation possible not only by typing "g" key on the key board.
+  
+    ![Unprecise Game Initiation](/assets/images/game_initiation.png)
+
 
 
 Comment: Vladimir to check p/g/n and similar in the algorithm, functions and game description.
