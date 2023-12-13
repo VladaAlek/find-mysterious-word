@@ -133,9 +133,11 @@ def users_input_start_game():
     return start_game_choice
 
 # each list of strings contains the clues and answers for one game
-clues_1 = ['It is a city.', 'It is a capital city!', '…somewhere in Europe.', 'It has Spanish Steps.', '...and Colosseum.', 'Rome']
+clues_1 = ['It is a city.', 'It is a capital city!', '…somewhere in Europe.', 
+'It has Spanish Steps.', '...and Colosseum.']
 
-clues_2=[ 'It is a tool.', 'It is a very common tool in many trades.', 'Typically, it is made of wood and steel.', 'It is present in comic books too!',
+clues_2=[ 'It is a tool.', 'It is a very common tool in many trades.',
+'Typically, it is made of wood and steel.', 'It is present in comic books too!',
 'You have nailed it!']
 
 # create the dictionary containing list of strings as a values for the clues and 
@@ -191,11 +193,6 @@ def play_game():
             print(f"Sorry, {correct_answer.capitalize()} was the correct answer.")
 
 
-# Call the play_game function to start the game
-
-play_game()
-
-
 def main():
     """
     Run all program functions
@@ -203,7 +200,9 @@ def main():
     display_welcome_messages()
     choice = users_input()
     choose_step(choice)
-    start_game_choice = users_input_start_game()  # Get user input for starting the game
+    # Get user input for starting the game
+    start_game_choice = users_input_start_game()  
+    play_game()
     
 
 print("")

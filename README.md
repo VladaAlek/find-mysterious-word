@@ -126,6 +126,11 @@ Obervation that the leters of the cities in the answers should be capitalized
 
     ![Capitalized Names](/assets/images/capitalize.PNG)
 
+Mistake in clues_1 list causes the inconsistancy when print function activated
+
+    ![Mistake in clues_1 List](/assets/images/n_string_list_mistake.png)
+
+
 
 Comment: Vladimir to check p/g/n and similar in the algorithm, functions and game description.
 
@@ -184,7 +189,7 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 - Readme.md file deploied in [GitHub](https://github.com/ "GitHub")
 - Python code from the run.py file deploied in [Heroku](https://www.heroku.com/)
     1. problems with Heroku - to be elaborated 
-- 
+- Codeanywhere - frequent issues when trying to upload captures to immage folder 
 
 ### Acknowledgments
 
