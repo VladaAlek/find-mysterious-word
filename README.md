@@ -25,6 +25,10 @@ In the next step, the user has the option to choose between two possibilities:
 
 **Game Flow**
 
+Before each game the notification signals the game count.
+
+inspiration and sourcecode: [Inspiration](https://www.youtube.com/watch?v=qwAFL1597eM "Inspiration") and [sourcecode](https://github.com/gitdagray/python-course/blob/main/lesson12/rps5.py "Game Counter") 
+
 The terminal displays the first clue to the mysterious concept and provides instructions to enter an answer.
 - *Incorrect Answer:* The user receives a notification about the  incorrect answer and moves on to the next clue.
 - *Correct Answer:* The user receives a notification about the correct answer.
@@ -128,7 +132,7 @@ Obervation that the leters of the cities in the answers should be capitalized
 
 Mistake in clues_1 list causes the inconsistancy when print function activated
 
-    ![Mistake in clues_1 List](/assets/images/n_string_list_mistake.png)
+    ![Mistake in clues_1 List](/assets/images/string_list_mistake.png)
 
 
 
@@ -177,6 +181,11 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 - As a first-time visitor, clarity and quick understanding are paramount. Right off the bat, the ....to be elaborated
 
 - *issues noticed:* Capitalization of the first letter in the answers, for instance "Rome" is not required in all games. It causes situations in which some words start with the capital letter unnecessarily. Hence, the user can expect the results like "Hammer", instead of "hammer".
+
+- game count ensures better game navigation
+
+-  ![Game Counter](/assets/images/game_counter.png)
+
 
 #### Returning and Frequent Visitor Goals
 

@@ -152,9 +152,12 @@ def play_game():
     """Function to execute the game."""
     # For loop to iterate through the dictionary and return clues 
     # and correct answers
+    game_count = 0  # Initialize the game count
     for game_data in clue_sets:
         # Variables to store the values for clues, correct answers, 
         # and explanation from the dictionary
+        game_count += 1  # Increment the game count
+        print(f"\n--- Game {game_count} ---")
         clues = game_data['clues']
         correct_answer = game_data['correct_answer']
         explanation = game_data.get('explanation', 'No explanation available.')
