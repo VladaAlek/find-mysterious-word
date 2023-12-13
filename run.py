@@ -175,6 +175,8 @@ def play_game():
             if clue_answer == correct_answer:
                 # print "Congratulation" message and capitalize first letter
                 print("Congratulations, " + clue_answer.capitalize() + " is the correct answer!")
+                print(f"{correct_answer.capitalize()} is the capital city of Italy (Europe), famous for its beautiful historical "
+                  "architecture (https://en.wikipedia.org/wiki/Spanish_Steps). Probably the most famous building is the Roman Colosseum!")
 
                 # stop further iteration as the correct answer has been 
                 # provided
@@ -191,6 +193,9 @@ def play_game():
         else:
 
             print(f"Sorry, {correct_answer.capitalize()} was the correct answer.")
+            print(f"{correct_answer.capitalize()} is the capital city of Italy (Europe), famous for its beautiful historical "
+                  "architecture (https://en.wikipedia.org/wiki/Spanish_Steps). Probably the most famous building is the Roman Colosseum!")
+
 
 
 def main():
