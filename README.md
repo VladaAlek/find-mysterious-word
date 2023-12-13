@@ -145,6 +145,9 @@ Game initiation possible not only by typing "g" key on the key board.
   
     ![Unprecise Game Initiation](/assets/images/game_initiation.png)
 
+Problematic return to game when exception raised
+
+    ![Unprecise Game Initiation](/assets/images/command_not_found.png)
 
 
 Comment: Vladimir to check p/g/n and similar in the algorithm, functions and game description.

@@ -24,19 +24,19 @@ def display_welcome_messages():
 
 
 def users_input():
+    """
+    Function to allow the demo-game-exit navigation and to raise an exception if a typo occurs.
+    """
     try:
         print("")
         choice = input("Type 'd' to see the demo, 'g' to play, or 'e' to exit!\n").lower()
         if choice not in ["g", "d", "e"]:
             raise ValueError("Invalid input. Please enter 'g', 'd', or 'e'.")
+        return choice  # Return the choice if it's valid
     except ValueError as e:
         print(f"Error: {e}")
-        # You might want to handle the error or exit the program here
-        # For now, let's re-raise the exception
-        raise e
-    return choice
+        return users_input()
 
-# add option where the user get the notification that she/he used the wrong data type
 
 # Start game function
 #def game_start():
