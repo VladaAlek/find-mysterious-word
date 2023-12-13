@@ -132,23 +132,68 @@ def users_input_start_game():
     start_game_choice = input("Click g to start the game!\n").lower()
     return start_game_choice
 
+# each list of strings contains the clues and answers for one game
 clues_1 = ['It is a city.', 'It is a capital city!', '…somewhere in Europe.', 'It has Spanish Steps.', '...and Colosseum.', 'Rome']
 
-def play_game():
-    for clue in clues_1:
-        print(clue)
-        clue_answer = input("Please, type your answer here!\n").lower()
-        
-        if clue_answer == 'rome':
-            print("Congratulations, " + clue_answer.capitalize() + " is the correct answer!")
-            # Here you can call the function for the next game or perform any other action
-            break
-        else:
-            print("Sorry, " + clue_answer.capitalize() + " is the wrong answer. Keep trying!")
+clues_2=[ 'It is a tool.', 'It is a very common tool in many trades.', 'Typically, it is made of wood and steel.', 'It is present in comic books too!',
+'You have nailed it!']
 
-    # If the loop completes without a correct answer, provide the correct answer
-    else:
-        print("Sorry, Rome was the correct answer.")
+# create the dictionary containing list of strings as a values for the clues and 
+# correct answers values
+
+clue_sets = [
+
+    {'clues': clues_1, 'correct_answer': 'rome'},
+
+    {'clues': clues_2, 'correct_answer': 'hammer'}
+
+]
+
+
+def play_game():
+    """.devcontainer/
+    function to execute the gaim
+    """
+    # for loop to iterate through dictionary and return clues and correct anwers
+    for game_data in clue_sets:
+        # variables to store the values for clues and correct answers 
+        # from the dictionary 
+        clues = game_data['clues']
+
+        correct_answer = game_data['correct_answer']
+
+        # nested loop to iterate and print the clues
+        for clue in clues:
+
+            print(clue)
+            # creates variable to store the input values and transform them into lower letters
+            clue_answer = input("Please, type your answer here!\n").lower()
+
+            # if statement to compare the users input with the correct answer
+            if clue_answer == correct_answer:
+                # print "Congratulation" message and capitalize first letter
+                print("Congratulations, " + clue_answer.capitalize() + " is the correct answer!")
+
+                # stop further iteration as the correct answer has been 
+                # provided
+
+                break
+            # else statement for the if statement
+            else:
+
+                print("Sorry, " + clue_answer.capitalize() + " is the wrong answer. Keep trying!")
+
+
+        # else statement for the for loop activated when the correct answer  
+        # has not been provided
+        else:
+
+            print(f"Sorry, {correct_answer.capitalize()} was the correct answer.")
+
+
+# Call the play_game function to start the game
+
+play_game()
 
 
 def main():
