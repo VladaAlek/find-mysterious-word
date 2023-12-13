@@ -129,16 +129,24 @@ def users_input_start_game():
     """
     Store user's choice to start the game
     """ 
-    start_game_choice = input("Click g to start the game!\n").lower()
-    return start_game_choice
+    try:
+        start_game_choice = input("Click g to start the game!\n").lower()
+        if start_game_choice == "g":
+            return start_game_choice
+        else:
+            ValueError("Invalid input. Please enter 'g'.")
+    except ValueError as e:
+            print(f"Error: {e}")
 
 # each list of strings contains the clues and answers for one game
-clues_1 = ['It is a city.', 'It is a capital city!', '…somewhere in Europe.', 
-'It has Spanish Steps.', '...and Colosseum.']
 
-clues_2=[ 'It is a tool.', 'It is a very common tool in many trades.',
-'Typically, it is made of wood and steel.', 'It is present in comic books too!',
-'You have nailed it!']
+clues_1 = ['It is a city.', 'It is a capital city!', 'It is somewhere in Europe.', 
+           'It has Spanish Steps.', 'Colosseum too.']
+
+clues_2 = ['It is a tool.', 'It is a very common tool in many trades.',
+           'Typically, it is made of wood and steel.', 'It is present in comic books too!',
+           'You have nailed it!']
+
 
 # create the dictionary containing list of strings as a values for the clues and 
 # correct answers values
@@ -156,8 +164,6 @@ def play_game():
     for game_data in clue_sets:
         # Variables to store the values for clues, correct answers, 
         # and explanation from the dictionary
-        game_count += 1  # Increment the game count
-        print(f"\n--- Game {game_count} ---")
         clues = game_data['clues']
         correct_answer = game_data['correct_answer']
         explanation = game_data.get('explanation', 'No explanation available.')
