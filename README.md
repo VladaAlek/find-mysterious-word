@@ -225,7 +225,7 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 ### Acknowledgments
 
 - Mentor Narender Singh
-- Sarah, Roman, John and Oisin from CI Tutor Team :-)
+- Sarah, Rebecca, Roman, John and Oisin from CI Tutor Team :-)
 
  
 
