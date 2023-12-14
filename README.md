@@ -187,6 +187,10 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 
     -  ![Staging and Pushing Issues](/assets/images/codeanywhere_unreliability%20.jpg)
     -  ![Staging and Pushing Solution](/assets/images/tutor_support.png)
+
+- **Blame** option in the GitHub used to access and examine the deployment history
+
+    - [Blame](/assets/images/blame_github.png)
        
 ## Testing User Stories from the UX Section
 
@@ -211,7 +215,11 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 ## Deployment
 - Readme.md file deploied in [GitHub](https://github.com/ "GitHub")
 - Python code from the run.py file deploied in [Heroku](https://www.heroku.com/)
-    1. problems with Heroku - to be elaborated 
+    1. problems to log in to Heroku
+     - this, simingly simple step, required the action of the CI and Heroku teams.
+
+![Heroku Deployment Problems](/assets/images/heroku_deployment_problems.png)
+
 - Codeanywhere - frequent issues when trying to upload captures to immage folder 
 
 ### Acknowledgments
