@@ -1,16 +1,24 @@
 import sys
+import time
+
 """ 
 import exit system func. to be used when 
 the user chose to exit the game
 
 """
-
+def typing_greeting_message():
+    greeting_message = "\nWelcome to our guessing the mysterious word game! \U0001F60E"
+    for char in greeting_message:
+        time.sleep(0.1)
+        print(char, end='', flush=True)
+        
 
 def display_welcome_messages():
     """
     Welcoming message function
     """
-    print("\nWelcome to our guessing the mysterious word game! \U0001F60E")
+    typing_greeting_message()
+    print() 
     print("\nFollow 5 clues by filling up the input fields one after another")
     print("\nto find out the mysterious term.")
     print("\nDon't worry if you don't guess from the first attempt;")
@@ -203,7 +211,8 @@ def play_game():
                 break
             # Else statement for the if statement
             else:
-                Print("Turn back the original message later") 
+                print(f"Sorry, {clue_answer.capitalize()} is the wrong answer. Keep trying!")# Else statement for the for loop activated when the correct answer
+                # has not been provided
         else:
             print(f"Sorry, {correct_answer.capitalize()} was the correct answer.")
             # Print the default explanation for the correct answer
