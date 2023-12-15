@@ -6,6 +6,18 @@ import exit system func. to be used when
 the user chose to exit the game
 
 """
+
+def print_title():
+    """
+    # print the title of the game in capital letters
+    """
+    print("")
+    print("")
+    text = "Find a mysterious word in five steps"
+    print(text.upper())
+    print("")
+    print("")
+    
 def typing_greeting_message():
     greeting_message = "\nWelcome to our guessing the mysterious word game! \U0001F60E"
     for char in greeting_message:
@@ -219,10 +231,12 @@ def play_game():
             print(explanation)
 
 
+
 def main():
     """
     Run all program functions
     """
+    print_title()
     display_welcome_messages()
     choice = users_input()
     choose_step(choice)
@@ -230,15 +244,6 @@ def main():
     start_game_choice = users_input_start_game()  
     play_game()
     
-
-print("")
-print("")
-# print the title of the game in capital letters
-text = "Find a mysterious word in five steps"
-print(text.upper())
-print("")
-print("")
-
 
 main()
 
