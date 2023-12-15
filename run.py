@@ -143,7 +143,7 @@ def display_intro():
     print("")
     print("")
 
-    start_game_choice = input("Type 'g' to play, or any button to exit!\n").lower()
+    start_game_choice = input("Type 🇬 to play, or any button to exit!\n").lower()
     click_game(start_game_choice)
     
     print("")
@@ -170,6 +170,12 @@ def users_input_start_game():
             raise ValueError("Invalid input. Please enter 'g'.")
     except ValueError as e:
         print(f"Error: {e}")
+
+def time_counter():
+    print("Countdown begins")
+for i in range(1,6)[::-1]:
+    print(i) 
+print("Time's up!")
 
 # each list of strings contains the clues and answers for one game
 
@@ -213,6 +219,7 @@ def play_game():
             print(clue)
             # Creates a variable to store the input values and transform them
             # into lowercase letters
+            time_counter()
             clue_answer = input("Please, type your answer here!\n").lower()
 
             # If statement to compare the user's input with the correct answer
