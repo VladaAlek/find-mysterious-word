@@ -203,14 +203,9 @@ def play_game():
                 break
             # Else statement for the if statement
             else:
-                print(f"Sorry, {clue_answer.capitalize()} is the wrong answer.
-                Keep trying!")
-
-        # Else statement for the for loop activated when the correct answer
-        # has not been provided
+                Print("Turn back the original message later") 
         else:
-            print(f"Sorry, {correct_answer.capitalize()} 
-            was the correct answer.")
+            print(f"Sorry, {correct_answer.capitalize()} was the correct answer.")
             # Print the default explanation for the correct answer
             print(explanation)
 
