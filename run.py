@@ -18,9 +18,10 @@ def print_title():
     print("")
     print("")
     
-def typing_greeting_message():
-    greeting_message = "\nWelcome to our guessing the mysterious word game! \U0001F60E"
-    for char in greeting_message:
+def typing_greeting_message(text):
+    """ causes the letters to be presented one by one
+    """
+    for char in text:
         time.sleep(0.1)
         print(char, end='', flush=True)
         
@@ -29,12 +30,17 @@ def display_welcome_messages():
     """
     Welcoming message function
     """
-    typing_greeting_message()
-    print() 
-    print("\nFollow 5 clues by filling up the input fields one after another")
-    print("\nto find out the mysterious term.")
-    print("\nDon't worry if you don't guess from the first attempt;")
-    print("\nyou will get more signs to guide you to the victory.")
+    greeting_message = "\nWelcome to our guessing the mysterious word game! \U0001F60E\n"
+    typing_greeting_message(greeting_message)
+    greeting_message = "\nFollow 5 clues by filling up the input fields one after another\n"
+    typing_greeting_message(greeting_message)
+    greeting_message = "\nto find out the mysterious term.\n"
+    typing_greeting_message(greeting_message)
+    greeting_message = "\nDon't worry if you don't guess from the first attempt;\n"
+    typing_greeting_message(greeting_message)
+    greeting_message = "\nyou will get more signs to guide you to the victory.\n"
+    typing_greeting_message(greeting_message)
+    
 
 # User input
 
