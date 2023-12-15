@@ -51,9 +51,9 @@ def users_input():
     """
     try:
         print("")
-        choice = input("Type 'd' to see the demo, 'g' to play, or 'e' to exit!\n").lower()
+        choice = input("Type 🇩 to see the demo,\n🇬 to play,\nor 🇪 to exit!\n").lower()
         if choice not in ["g", "d", "e"]:
-            raise ValueError("Invalid input. Please enter 'g', 'd', or 'e'.")
+            raise ValueError("Invalid input. Please enter 🇬, 🇩, or 🇪.")
         return choice  # Return the choice if it's valid
     except ValueError as e:
         print(f"Error: {e}")
@@ -96,7 +96,7 @@ def click_game(start_game_choice):
         """
         Function to start the game from the demo field
         """
-        print("Type 'g' to play, or any button to exit!\n")
+        print("Type 🇬 to play, or any button to exit!\n")
         if start_game_choice == "g":
             play_game()
         elif start_game_choice != "g":

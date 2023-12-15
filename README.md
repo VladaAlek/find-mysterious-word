@@ -15,7 +15,8 @@ INSPIRATION FOR THIS GAME CAME FROM THE POPULAR SERBIAN QUIZ SCHOW "SLAGALICA"
 **Introduction**
 The user familiarizes themselves with the project content in two ways:
 - *Title:* Its significance is emphasized by using capital letters.
--  *Explanation*: A concise explanation guides the user into the essence of the project and explains how to use it.
+-  *Explanation*: A concise explanation guides the user into the essence of the project and explains how to use it. 
+- The **typing-mashine-efect** ensures the better readability.
 
 **Demo, Game or Exit**
 
@@ -54,7 +55,7 @@ At the end of the cycle of questions for the five mysterious concepts, the user 
 ## Visual Elements
 EMOTICONS
  - Inspiration for the introduction of emoticons came from [Python Tutorial for Beginners (with mini-projects)](https://www.youtube.com/watch?v=qwAFL1597eM "Python Tutorial for Beginners (with mini-projects)")
- - source for the [Emoticons](https://beta.emojipedia.org/ "Emoticons")
+ - source for the [Emoticons](https://beta.emojipedia.org/ "Emoticons") and [Number Emoji](https://emojicombos.com/g "Number Emoji")
 
 ## Further Project´s Development
 
@@ -105,6 +106,8 @@ EMOTICONS
 - Tutorial no. 6 from [Python Full Course for free ](https://www.youtube.com/watch?v=XKHEtdqhLK8 "Python Full Course for free ") from Bro Code used for coding of input section.
 
 - David Gray - enter the comment here later
+
+- typing Instruction effect inspiration came from [Slack Community](https://app.slack.com/client/T0L30B202/search "Slack Community") and [Flush Function in Python Blog](https://pythonhow.com/how/flush-the-output-of-the-print-function/ "Flush Function in Python Blog")
 
 
 
@@ -198,6 +201,8 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 
 - As a first-time visitor, clarity and quick understanding are paramount. Right off the bat, the ....to be elaborated
 
+- **typing-mashine-efect** implemented in the Introduction section aimes to ensure that the users are familiar with the rules of the game
+
 - *issues noticed:* Capitalization of the first letter in the answers, for instance "Rome" is not required in all games. It causes situations in which some words start with the capital letter unnecessarily. Hence, the user can expect the results like "Hammer", instead of "hammer".
 
 - game count ensures better game navigation
@@ -213,10 +218,12 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 
 
 ## Deployment
+
 - Readme.md file deploied in [GitHub](https://github.com/ "GitHub")
 - Python code from the run.py file deploied in [Heroku](https://www.heroku.com/)
     1. problems to log in to Heroku
      - this, simingly simple step, required the action of the CI and Heroku teams.
+- run.py file imported python-built-in modules "import sys" and "import time". Hence, the project runs without anny additional packages in the requirements.txt file. 
 
 ![Heroku Deployment Problems](/assets/images/heroku_deployment_problems.png)
 
