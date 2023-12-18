@@ -112,6 +112,8 @@ EMOTICONS
 
 - typing Instruction effect inspiration came from [Slack Community](https://app.slack.com/client/T0L30B202/search "Slack Community") and [Flush Function in Python Blog](https://pythonhow.com/how/flush-the-output-of-the-print-function/ "Flush Function in Python Blog")
 
+- [Python Time Sleep](https://www.digitalocean.com/community/tutorials/python-time-sleep "Python Time Sleep")
+
 
 
 ## Product Testing
