@@ -36,7 +36,7 @@ def display_welcome_messages():
     typing_greeting_message(greeting_message)
     greeting_message = "\nto find out the mysterious term.\n"
     typing_greeting_message(greeting_message)
-    greeting_message = "\nDon't worry if you don't guess from the first attempt;\n"
+    greeting_message = "\nDon't worry if you don't guess from the first attempt.\n"
     typing_greeting_message(greeting_message)
     greeting_message = "\nyou will get more signs to guide you to the victory.\n"
     typing_greeting_message(greeting_message)
@@ -86,10 +86,7 @@ def choose_step(choice):
         display_intro()
     elif choice == "e":
         exit_game()
-    else:
-        print("Let's start the game!".upper())
-        print("")
-        play_game()
+    else:play_game()
 
 
 def click_game(start_game_choice):
@@ -171,12 +168,6 @@ def users_input_start_game():
     except ValueError as e:
         print(f"Error: {e}")
 
-def time_counter():
-    print("Countdown begins")
-for i in range(1,6)[::-1]:
-    time.sleep(1)
-    print(i)
-print("Time's up!")
 
 # each list of strings contains the clues and answers for one game
 
@@ -215,15 +206,13 @@ def play_game():
         correct_answer = game_data['correct_answer']
         explanation = game_data.get('explanation', 'No explanation available.')
 
-
         # Nested loop to iterate and print the clues
         for clue in clues:
             print(clue)
             # Creates a variable to store the input values and transform them
             # into lowercase letters
             clue_answer = input("Please, type your answer here!\n").lower()
-            # Countdown before starting the game
-            time_counter()
+
             # If statement to compare the user's input with the correct answer
             if clue_answer == correct_answer:
                 # Print "Congratulations" message and 
@@ -244,8 +233,6 @@ def play_game():
             print(f"Sorry, {correct_answer.capitalize()} was the correct answer.")
             # Print the default explanation for the correct answer
             print(explanation)
-
-
 
 def main():
     """

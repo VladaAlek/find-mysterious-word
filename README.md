@@ -200,9 +200,11 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 
     - [Blame](/assets/images/blame_github.png)
 
-- Issue that the time_counter was called first disrupting the wished line of commands
+- Issue that the time_counter function was called before all other functions or in the wrong place of the play_game funcion disrupting the wished line of commands
 
     ![Count Down Issue](/assets/images/count_down_issue.PNG)
+
+    ![Count Down Issue](/assets/images/count_down_issue_1.PNG)
 
 ## Testing User Stories from the UX Section
 
