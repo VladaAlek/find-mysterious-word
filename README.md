@@ -199,7 +199,11 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 - **Blame** option in the GitHub used to access and examine the deployment history
 
     - [Blame](/assets/images/blame_github.png)
-       
+
+- Issue that the time_counter was called first disrupting the wished line of commands
+
+    ![Count Down Issue](/assets/images/count_down_issue.PNG)
+
 ## Testing User Stories from the UX Section
 
 #### First-Time Visitor Goals

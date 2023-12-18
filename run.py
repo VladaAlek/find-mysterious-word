@@ -176,7 +176,6 @@ def time_counter():
 for i in range(1,6)[::-1]:
     time.sleep(1)
     print(i)
-    time.sleep(1) 
 print("Time's up!")
 
 # each list of strings contains the clues and answers for one game
@@ -216,14 +215,15 @@ def play_game():
         correct_answer = game_data['correct_answer']
         explanation = game_data.get('explanation', 'No explanation available.')
 
+
         # Nested loop to iterate and print the clues
         for clue in clues:
             print(clue)
             # Creates a variable to store the input values and transform them
             # into lowercase letters
-            time_counter()
             clue_answer = input("Please, type your answer here!\n").lower()
-
+            # Countdown before starting the game
+            time_counter()
             # If statement to compare the user's input with the correct answer
             if clue_answer == correct_answer:
                 # Print "Congratulations" message and 
