@@ -206,9 +206,12 @@ def play_game():
         correct_answer = game_data['correct_answer']
         explanation = game_data.get('explanation', 'No explanation available.')
 
+
         # Nested loop to iterate and print the clues
         for clue in clues:
             print(clue)
+            print(f"You have 10 seconds to think about the answer!")
+            time.sleep(10)
             # Creates a variable to store the input values and transform them
             # into lowercase letters
             clue_answer = input("Please, type your answer here!\n").lower()
