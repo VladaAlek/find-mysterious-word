@@ -68,6 +68,7 @@ EMOTICONS
  - provide the user how many tries have left before the game conclusion
 
 #### Timer
+[Count-Down_Timer](https://www.askpython.com/python/examples/countdown-with-for-loops "Count-Down_Timer")
 - The user has a limited time to provide an answer to each of the offered clues. The remaining time is displayed through a countdown in the terminal.
 - An even more advanced game has the feature that with each level of difficulty, the time for answering questions decreases.
 

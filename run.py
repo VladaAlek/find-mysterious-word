@@ -174,7 +174,9 @@ def users_input_start_game():
 def time_counter():
     print("Countdown begins")
 for i in range(1,6)[::-1]:
-    print(i) 
+    time.sleep(1)
+    print(i)
+    time.sleep(1) 
 print("Time's up!")
 
 # each list of strings contains the clues and answers for one game
