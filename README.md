@@ -43,7 +43,7 @@ The terminal displays the first clue to the mysterious concept and provides inst
 - *Incorrect Answer:* The user receives a notification about the  incorrect answer and moves on to the next clue.
 - *Correct Answer:* The user receives a notification about the correct answer.
 
-- *explanation* the user is provided with the interpretation regarding the clues and answer after failing or cucciding to give the correct answer
+- *explanation* the user is provided with the interpretation regarding the clues and answer after failing or succiding to give the correct answer
 
 The user can choose between:
 1. Starting a new game by typing **"n"** for "New Game!"— a new set of questions appears on the screen.
@@ -157,6 +157,16 @@ Problematic return to game when exception raised
 
     ![Unprecise Game Initiation](/assets/images/command_not_found.png)
 
+Conflicting instruction and final result at the end of the final game
+    
+    ![Conflicting instruction](/assets/images/g_key_start_game.PNG)
+
+Overlapping answer occure when the user enter the input before the ten seconds period
+
+    ![Overlapping Answer](/assets/images/overlapping_anwers.PNG)
+
+
+
 
 Comment: Vladimir to check p/g/n and similar in the algorithm, functions and game description.
 
@@ -205,6 +215,10 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
     ![Count Down Issue](/assets/images/count_down_issue.PNG)
 
     ![Count Down Issue](/assets/images/count_down_issue_1.PNG)
+
+- Infinite Loop in users_input_start_game() if the user does not input "g." 
+
+     ![Loop](/assets/images/loop.PNG)
 
 ## Testing User Stories from the UX Section
 
