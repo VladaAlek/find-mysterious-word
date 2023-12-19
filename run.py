@@ -240,12 +240,12 @@ def play_game():
                 break
             # Else statement for the if statement
             else:
-                # Increment the wrong answer count
-                fail_count += 1
                 print(f"Sorry, {clue_answer.capitalize()} is the wrong answer.")# Else 
                 #statement for the for loop activated when the correct answer
                 # has not been provided
         else:
+            # Increment the wrong answer count
+            fail_count += 1
             print(f"Almost, {correct_answer.capitalize()}") 
             print(f"was the correct answer.")
             #Print the default explanation for the correct answer
@@ -254,7 +254,7 @@ def play_game():
     print(f"\nTotal Correct Answers: {correct_count}")
     print(f"Total Wrong Answers: {fail_count}")
 
-    
+
 def main():
     """
     Run all program functions

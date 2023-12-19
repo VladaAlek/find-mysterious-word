@@ -166,6 +166,13 @@ Overlapping answer occure when the user enter the input before the ten seconds p
 
     ![Overlapping Answer](/assets/images/overlapping_anwers.PNG)
 
+Incorect Correct Wrong Count in the initial code version
+
+    ![Incorect Correct Wrong Count](/assets/images/incorect_correct_wrong_count.PNG)
+
+    ![Incorect Correct Wrong Count](/assets/images/corect_correct_wrong_count.PNG)
+
+
 
 
 
