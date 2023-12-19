@@ -27,20 +27,25 @@ In the next step, the user has the option to choose between three possibilities.
 To indicate users' typo mistakes, the exception with the text "Type 'd' to see the demo, 'g' to play, or 'e' to exit!" 
 will be raised when none of these three letters entered
 
-    - ![Exceptions](/assets/images/wrong_value_input.png)
-
-- The user can directly initiate the game by typing **"g."**
+    - The user can directly initiate the game by typing **"g."**
 - Alternatively, it is possible to exit the game **"e"**.
-- By typing **"d"** for Demo, they go to the page with a demo example. After becoming more familiar with the game rules, the user can start the actual game by typing **"g"** for "Game" or exit the program by typing any other key on the keyboard for "Exit."
+- By typing **"d"** for Demo, they go to the page with a demo example. 
+Each question in the Demo is displayd individualy to increasse the readibility. 
+After becoming more familiar with the game rules, the user can start the actual game by typing **"g"** for "Game" or exit the program by typing any other key on the keyboard for "Exit."
+
+        ![Exceptions](/assets/images/wrong_value_input.png)
 
 **Game Flow**
 
 Before each game, the notification signals the game count.
 
-inspiration and sourcecode: [Inspiration](https://www.youtube.com/watch?v=qwAFL1597eM "Inspiration") and [sourcecode](https://github.com/gitdagray/python-course/blob/main/lesson12/rps5.py "Game Counter") 
+![Game Count](/assets/images/...)
 
 The terminal displays the first clue to the mysterious concept and provides instructions to enter an answer.
-- *Incorrect Answer:* The user receives a notification about the  incorrect answer and moves on to the next clue.
+- *delayed action:* two messages display with a **ten seconds** brake between them: 
+        1) "You have 10 seconds to think about the answer!"
+        2) "Please, type your answer here!"
+- *Incorrect Answer:* The user receives a notification about the incorrect answer and moves on to the next clue.
 - *Correct Answer:* The user receives a notification about the correct answer.
 
 - *explanation* the user is provided with the interpretation regarding the clues and answer after failing or succeeding to give the correct answer
@@ -117,6 +122,8 @@ EMOTICONS
 - [Python Time Sleep](https://www.digitalocean.com/community/tutorials/python-time-sleep "Python Time Sleep")
 
 - [Exit Game Function](https://github.com/gitdagray/python-course/blob/main/lesson12/rps5.py "Exit Game Function"), lines 78-80.
+
+- inspiration and sourcecode for the Game Counter: [Inspiration](https://www.youtube.com/watch?v=qwAFL1597eM "Inspiration") and [sourcecode](https://github.com/gitdagray/python-course/blob/main/lesson12/rps5.py "Game Counter") 
 
 
 ## Product Testing
