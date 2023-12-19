@@ -1,6 +1,6 @@
 https://markdown-editor.github.io/
 
-# Find mysterious word in five steps
+# Find a mysterious word in five steps
 
 ## About the project:
 If you enjoy solving mysteries, you're in the right place. Allow me to present a game where the main task is to uncover mysterious words. To succeed, a clue will be displayed on the screen. Enter your answer, and you'll either receive confirmation that your answer is correct, or you'll move on to the next clue. In case you don't succeed the first time, fear not — the correct answer will be revealed.
@@ -8,34 +8,34 @@ This game features a total of five mysterious words.
 
 ![Terminal_photos](/assets/images/terminal_1.png)
 
-INSPIRATION FOR THIS GAME CAME FROM THE POPULAR SERBIAN QUIZ SCHOW "SLAGALICA"
+INSPIRATION FOR THIS GAME CAME FROM THE POPULAR SERBIAN QUIZ SHOW "SLAGALICA"
 
 ## User Experience:
 
- - See Prototyp - Algorithm bellow
+ - See Prototype - Algorithm below
 
 **Introduction**
 The user familiarizes themselves with the project content in two ways:
 - *Title:* Its significance is emphasized by using capital letters.
 -  *Explanation*: A concise explanation guides the user into the essence of the project and explains how to use it. 
-- The **typing-mashine-efect** ensures the better readability.
+- The **typing-machine-effect** ensures the better readability.
 
 **Demo, Game or Exit**
 
 In the next step, the user has the option to choose between three possibilities.
 
-To indicate users typo mistakes, the exception with the text "Type 'd' to see the demo, 'g' to play, or 'e' to exit!" 
-will be raised when non of these three letter entered
+To indicate users' typo mistakes, the exception with the text "Type 'd' to see the demo, 'g' to play, or 'e' to exit!" 
+will be raised when none of these three letters entered
 
     - ![Exceptions](/assets/images/wrong_value_input.png)
 
 - The user can directly initiate the game by typing **"g."**
 - Alternatively, it is possible to exit the game **"e"**.
-- By typing **"d"** for Demo, they go to the page with a demo example. After becoming more familiar with the game rules, the user can start the actual game by typing **"g"** for "Game" or exit the program by typing any other key on the keybord for "Exit."
+- By typing **"d"** for Demo, they go to the page with a demo example. After becoming more familiar with the game rules, the user can start the actual game by typing **"g"** for "Game" or exit the program by typing any other key on the keyboard for "Exit."
 
 **Game Flow**
 
-Before each game the notification signals the game count.
+Before each game, the notification signals the game count.
 
 inspiration and sourcecode: [Inspiration](https://www.youtube.com/watch?v=qwAFL1597eM "Inspiration") and [sourcecode](https://github.com/gitdagray/python-course/blob/main/lesson12/rps5.py "Game Counter") 
 
@@ -43,7 +43,7 @@ The terminal displays the first clue to the mysterious concept and provides inst
 - *Incorrect Answer:* The user receives a notification about the  incorrect answer and moves on to the next clue.
 - *Correct Answer:* The user receives a notification about the correct answer.
 
-- *explanation* the user is provided with the interpretation regarding the clues and answer after failing or succiding to give the correct answer
+- *explanation* the user is provided with the interpretation regarding the clues and answer after failing or succeeding to give the correct answer
 
 The user can choose between:
 1. Starting a new game by typing **"n"** for "New Game!"— a new set of questions appears on the screen.
@@ -62,10 +62,10 @@ EMOTICONS
 ## Further Project´s Development
 
 ####
- - provide the user with report about entering unacceptable data type
+ - provide the user with a report about entering unacceptable data type
 
  ####
- - provide the user how many tries have left before the game conclusion
+ - provide the user with how many tries are left before the game conclusion
 
 #### Timer
 [Count-Down_Timer](https://www.askpython.com/python/examples/countdown-with-for-loops "Count-Down_Timer")
@@ -97,16 +97,18 @@ EMOTICONS
 
 - [Python Checker](https://www.pythonchecker.com/ "Python Checker") used to style the code according to the [PEP 8](http:/https://peps.python.org/pep-0008// "PEP 8") standards
 
-    Issue of 79 characters per line signaled
+    The issue of 79 characters per line signalled
 
 ![Python Checker](/assets/images/pythonchecker.png)
 
-[Python Tutor](https://pythontutor.com/render.html#mode=display "Python Tutor") used to monitor the execution of the python commands. See Debuging and Refactoring section bellow. 
+[Python Tutor](https://pythontutor.com/render.html#mode=display "Python Tutor") is used to monitor the execution of the Python commands. See the Debugging and Refactoring section below.
+
+[Grammarly](https://app.grammarly.com "Grammarly") is used to correct grammar and spelling mistakes
 
 
 - PowerPoint
 
-- Tutorial no. 6 from [Python Full Course for free ](https://www.youtube.com/watch?v=XKHEtdqhLK8 "Python Full Course for free ") from Bro Code used for coding of input section.
+- Tutorial no. 6 from [Python Full Course for free ](https://www.youtube.com/watch?v=XKHEtdqhLK8 "Python Full Course for free ") from Bro Code used for coding of the input section.
 
 - David Gray - enter the comment here later
 
@@ -123,9 +125,9 @@ EMOTICONS
 
    ![Display Intro](/assets/images/product_testing.PNG)
 
-The issue resolved by deleting the nested display_intro() from the main().
+The issue was resolved by deleting the nested display_intro() from the main().
 
-   In the second case, the function was called two times, causing negative UX
+   In the second case, the function was called two times, causing a negative UX
    
    ![Display Intro](/assets/images/product_testing_2.PNG)
 
@@ -138,57 +140,60 @@ Confusing instructions noticed in the first version of the play_game function
 
     ![Confusing Instruction](/assets/images/confusing_aswers.PNG)
 
-Confusing answers notices in the last step of the play_game function
+Confusing answers noticed in the last step of the play_game function
 
     ![Confusing Last Answer](/assets/images/wrong_final_answer.PNG)
 
-Obervation that the leters of the cities in the answers should be capitalized
+The observation that the letters of the cities in the answers should be capitalized
 
     ![Capitalized Names](/assets/images/capitalize.PNG)
 
-Mistake in clues_1 list causes the inconsistancy when print function activated
+A mistake in clues_1 list causes the inconsistency when print function activated
 
     ![Mistake in clues_1 List](/assets/images/string_list_mistake.png)
 
-Game initiation possible not only by typing "g" key on the key board.
+Game initiation is possible not only by typing the "g" key on the keyboard.
   
     ![Unprecise Game Initiation](/assets/images/game_initiation.png)
 
-Problematic return to game when exception raised
+Problematic return to the game when exception raised
 
     ![Unprecise Game Initiation](/assets/images/command_not_found.png)
 
 Conflicting instruction and final result at the end of the final game
     
-    ![Conflicting instruction](/assets/images/g_key_start_game.PNG)
+    ![Conflicting instructions](/assets/images/g_key_start_game.PNG)
 
-Overlapping answer occure when the user enter the input before the ten seconds period
+An overlapping answer occures when the user enters the input before the ten seconds period expires
 
     ![Overlapping Answer](/assets/images/overlapping_anwers.PNG)
 
-Incorect Correct Wrong Count in the initial code version
+Incorrect Correct Wrong Count in the initial code version
 
-    ![Incorect Correct Wrong Count](/assets/images/incorect_correct_wrong_count.PNG)
+    ![Incorrect Correct Wrong Count](/assets/images/incorect_correct_wrong_count.PNG)
 
-    ![Incorect Correct Wrong Count](/assets/images/corect_correct_wrong_count.PNG)
+    ![Correct Correct Wrong Count](/assets/images/corect_correct_wrong_count.PNG)
 
+The game promtly ends after the total correct/wrong answer has been printed. Solution: introduction of the users_input_start_game function
+
+    ![Game Promtly Ends](/assets/images/deadend.PNG)
 
 
 
 
 Comment: Vladimir to check p/g/n and similar in the algorithm, functions and game description.
 
-## Debuging and Refactoring
+## Debugging and Refactoring
 
-- Exceptions raised in the Terminal used to locate the mistakes and refactor the code.
-    For instance, scope issue solved by introducing "return choice" in users_input function and passing "choice" argument into the choose_step function
+- Exceptions raised in the Terminal are used to locate the mistakes and refactor the code.
+    For instance, the scope issue was solved by introducing "return choice" in the users_input function and passing the "choice" argument into the choose_step function.
 
     
     ![Name Error](/assets/images/Name_Error.png)
     
     ![Type Error](/assets/images/Type_Error.png)
 
-    Later, the same approach used to understand which funcion was missing to complete the workflow of the command lines
+    Later, the same approach was used to understand which function was missing to complete the workflow of the command lines.
 
     ![Missing Function](/assets/images/name_error_click_g.PNG)
 
@@ -197,11 +202,11 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
     ![Synthax Errors](/assets/images/synthax_error.png)
 
 
-- Python Tutor used to monitor the execution of the python commands
+- Python Tutor used to monitor the execution of the Python commands
 
     ![Python Tutor](/assets/images/python_tutor.PNG)
 
-- teporarelly introduced print function used to control the flow of the command lines
+- temporarily introduced print function used to control the flow of the command lines
 
      ![Print Function](/assets/images/using_print_function.PNG)
 
@@ -218,7 +223,7 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 
     - [Blame](/assets/images/blame_github.png)
 
-- Issue that the time_counter function was called before all other functions or in the wrong place of the play_game funcion disrupting the wished line of commands
+- Issue that the time_counter function was called before all other functions or in the wrong place of the play_game function disrupting the desired line of commands.
 
     ![Count Down Issue](/assets/images/count_down_issue.PNG)
 
@@ -234,9 +239,9 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 
 - As a first-time visitor, clarity and quick understanding are paramount. Right off the bat, the ....to be elaborated
 
-- **typing-mashine-efect** implemented in the Introduction section aimes to ensure that the users are familiar with the rules of the game
+- **typing-machine-effect** implemented in the Introduction section aims to ensure that the users are familiar with the rules of the game
 
-- *issues noticed:* Capitalization of the first letter in the answers, for instance "Rome" is not required in all games. It causes situations in which some words start with the capital letter unnecessarily. Hence, the user can expect the results like "Hammer", instead of "hammer".
+- *issues noticed:* Capitalization of the first letter in the answers, for instance, "Rome" is not required in all games. It causes situations in which some words start with the capital letter unnecessarily. Hence, the user can expect the results like "Hammer", instead of "hammer".
 
 - game count ensures better game navigation
 
@@ -247,25 +252,25 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 
  - Second-time and multiple-return users may find it not interesting to play again since they already know the correct answers. 
  
- - Secondary usage: However, the users can redisign and reuse this product as a learning material for educational purposes, especially if all groups of questions are closely related to the specific question - for instance, geography, history.
+ - Secondary usage: However, the users can redesign and reuse this product as a learning material for educational purposes, especially if all groups of questions are closely related to the specific question - for instance, geography, or history.
 
 
 ## Deployment
 
 - Readme.md file deploied in [GitHub](https://github.com/ "GitHub")
-- Python code from the run.py file deploied in [Heroku](https://www.heroku.com/)
+- Python code from the run.py file deployed in [Heroku](https://www.heroku.com/)
     1. problems to log in to Heroku
-     - this, simingly simple step, required the action of the CI and Heroku teams.
-- run.py file imported python-built-in modules "import sys" and "import time". Hence, the project runs without anny additional packages in the requirements.txt file. 
+     - this, seemingly simple step, required the action of the CI and Heroku teams.
+- run.py file imported python-built-in modules "import sys" and "import time". Hence, the project runs without any additional packages in the requirements.txt file. 
 
 ![Heroku Deployment Problems](/assets/images/heroku_deployment_problems.png)
 
-- Codeanywhere - frequent issues when trying to upload captures to immage folder 
+- Codeanywhere - frequent issues when trying to upload captures to the image folder 
 
 ### Acknowledgments
 
 - Mentor Narender Singh
-- Sarah, Rebecca, Roman, John and Oisin from CI Tutor Team :-)
+- Sarah, Rebecca, Roman, John and Oisin from the CI Tutor Team :-)
 
  
 
@@ -285,7 +290,7 @@ This is the Code Institute student template for deploying your third portfolio p
 
 ## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+When you create the app, you will need to add two build packs from the _Settings_ tab. The ordering is as follows:
 
 1. `heroku/python`
 2. `heroku/nodejs`
