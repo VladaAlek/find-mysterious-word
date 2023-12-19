@@ -243,9 +243,8 @@ def play_game():
                 print(f"Sorry, {clue_answer.capitalize()} is the wrong answer.")# Else 
                 #statement for the for loop activated when the correct answer
                 # has not been provided
-                print(f"Keep trying!")# has not been provided
         else:
-            print(f"You smart bee, {correct_answer.capitalize()}") 
+            print(f"Almost, {correct_answer.capitalize()}") 
             print(f"was the correct answer.")
             #Print the default explanation for the correct answer
             print(explanation)
