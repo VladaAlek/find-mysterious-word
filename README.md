@@ -216,7 +216,7 @@ Comment: Vladimir to check p/g/n and similar in the algorithm, functions and gam
 
     ![Count Down Issue](/assets/images/count_down_issue_1.PNG)
 
-- Infinite Loop in users_input_start_game() if the user does not input "g." 
+- Infinite Loop in users_input_start_game() if the user does not input "g." Issue solved by introducing sys.exit. 
 
      ![Loop](/assets/images/loop.PNG)
 

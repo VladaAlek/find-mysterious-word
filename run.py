@@ -170,14 +170,13 @@ def users_input_start_game():
     Store user's choice to start the game
     """
     try:
-        start_game_choice = input("Click g to start the game!\n").lower()
+        start_game_choice = input("Click 🇬 to start the game, or any other key to exit!\n").lower()
         if start_game_choice == "g":
             return start_game_choice
         else:
-            raise ValueError("Invalid input. Please enter 'g'.")
+            exit_game()          
     except ValueError as e:
         print(f"Error: {e}")
-
 
 # each list of strings contains the clues and answers for one game
 
