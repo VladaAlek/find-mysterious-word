@@ -104,43 +104,53 @@ def display_intro():
     """
     Intro display function
     """
-    demo_text = "Game Demonstration"
+    demo_text = "\nGame Demonstration"
     print(demo_text.upper())
     print("\nIt is a fruit!\n")
+    time.sleep(2)
     print()
     print("Answer: mango\n")
+    time.sleep(2)
     print("Sorry, mango is not the correct answer!🤨")
     print()
     
     print("\nIt is a very common fruit!")
+    time.sleep(2)
     print()
     print("Answer: apple\n")
+    time.sleep(2)
     print("Sorry, apple is not the correct answer!🤨")
     print()
     
     print("\nIt takes a lot of sun to raise this fruit.")
+    time.sleep(2)
     print()
     print("\nAnswer: orange")
+    time.sleep(2)
     print("\nSorry, orange is not the correct answer!🤨")
     print()
     
     print("\nThis fruit is slippery.")
+    time.sleep(2)
     print()
     print("\nAnswer: kiwi")
+    time.sleep(2)
     print("\nSorry, kiwi is not the correct answer!🤨")
     print()
     
     print("\nWhen ripe, it is yellow and curved.")
+    time.sleep(2)
     print()
     print("\nAnswer: banana")
     print("")
     print("")
+    time.sleep(2)
     banana_text = "🙌 Congratulations, banana is the correct answer!"
     print(banana_text.upper())
     print("")
     print("")
 
-    start_game_choice = input("Type 🇬 to play, or any button to exit!\n").lower()
+    start_game_choice = input("Type 🇬 to play, or any button to exit!\n\n").lower()
     click_game(start_game_choice)
     
     print("")
