@@ -22,7 +22,7 @@ def typing_greeting_message(text):
     """ causes the letters to be presented one by one
     """
     for char in text:
-        time.sleep(0.1)
+        #time.sleep(0.1)
         print(char, end='', flush=True)
         
 
@@ -69,9 +69,6 @@ def users_input():
 def exit_game():
     """
     function to exit the game while thanking the user
-    code origin: 
-    https://github.com/gitdagray/python-course/blob/main/lesson12/rps5.py
-    lines 78-80
     """
     print("\n🎉🎉🎉🎉")
     print("\nThank you for playing!\n")
@@ -210,6 +207,8 @@ def play_game():
         # Variables to store the values for clues, correct answers, 
         # and explanation from the dictionary
         game_count += 1  # Increment the game count
+        correct_count = 0  # Initialize the correct answer count
+        fail_count = 0  # Initialize the wrong answer count
         print(f"\n--- Game {game_count} ---")
         clues = game_data['clues']
         correct_answer = game_data['correct_answer']
@@ -229,16 +228,20 @@ def play_game():
             if clue_answer == correct_answer:
                 # Print "Congratulations" message and 
                 # capitalize the first letter
+                # Increment the correct answer count
+
                 print(f"Congratulations, {clue_answer.capitalize()}")
                 print(f" is the correct answer!")
                 # Print the custom explanation for the correct answer
                 print(explanation)
-
+                correct_count += 1
                 # Stop further iteration as the correct answer 
                 # has been provided
                 break
             # Else statement for the if statement
             else:
+                # Increment the wrong answer count
+                fail_count += 1
                 print(f"Sorry, {clue_answer.capitalize()} is the wrong answer.")# Else 
                 #statement for the for loop activated when the correct answer
                 # has not been provided
@@ -247,7 +250,11 @@ def play_game():
             print(f"was the correct answer.")
             #Print the default explanation for the correct answer
             print(explanation)
+    # Print the final results after all games
+    print(f"\nTotal Correct Answers: {correct_count}")
+    print(f"Total Wrong Answers: {fail_count}")
 
+    
 def main():
     """
     Run all program functions

@@ -114,6 +114,7 @@ EMOTICONS
 
 - [Python Time Sleep](https://www.digitalocean.com/community/tutorials/python-time-sleep "Python Time Sleep")
 
+- [Exit Game Function](https://github.com/gitdagray/python-course/blob/main/lesson12/rps5.py "Exit Game Function"), lines 78-80.
 
 
 ## Product Testing
