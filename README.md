@@ -31,16 +31,17 @@ The three above mentioned letters are clearly visible to improve the text readib
 - The user can directly initiate the game by typing **"g"**.
 - Alternatively, it is possible to exit the game **"e"**.
 - By typing **"d"** for Demo, they go to the page with a demo example. 
-- Each question in the Demo is displayd individualy by introducing three second temporal delay to increasse the readibility. 
+
+Each question in the *Demo* is displayd individualy by introducing three second temporal delay to increasse the readibility. 
 After becoming more familiar with the game rules, the user can start the actual game by typing **"g"** for "Game" or exit the program by **typing any other key** on the keyboard for **Exit**.
 
-        ![Exceptions](/assets/images/wrong_value_input.png)
+        ![Exceptions](/assets/images/wrong_value_input_1.png)
 
 **Game Flow**
 
 Before each game, the notification signals the game count.
 
-![Game Count](/assets/images/...)
+![Game Count](/assets/images/game_count_1.PNG)
 
 The terminal displays the first clue to the mysterious concept and provides instructions to enter an answer.
 - *delayed action:* two messages display with a ten seconds brake between them: 
@@ -147,45 +148,45 @@ The same as here:
 
 Confusing instructions noticed in the first version of the play_game function.
 
-    ![Confusing Instruction](/assets/images/confusing_aswers.PNG)
+![Confusing Instruction](/assets/images/confusing_aswers_1.PNG)
 
 Confusing answers noticed in the last step of the play_game function.
 
-    ![Confusing Last Answer](/assets/images/wrong_final_answer.PNG)
+![Confusing Last Answer](/assets/images/wrong_final_answer_1.PNG)
 
 The observation that the letters of the cities in the answers should be capitalized.
 
-    ![Capitalized Names](/assets/images/capitalize.PNG)
+![Capitalized Names](/assets/images/capitalize_1.PNG)
 
 A mistake in clues_1 list causes the inconsistency when print function activated
 
-    ![Mistake in clues_1 List](/assets/images/string_list_mistake.png).
+![Mistake in clues_1 List](/assets/images/string_list_mistake_1.png).
 
 Game initiation is possible not only by typing the "g" key on the keyboard.
   
-    ![Unprecise Game Initiation](/assets/images/game_initiation.png).
+![Unprecise Game Initiation](/assets/images/game_initiation.png).
 
 Problematic return to the game when exception raised.
 
-    ![Unprecise Game Initiation](/assets/images/command_not_found.png)
+![Unprecise Game Initiation](/assets/images/command_not_found.png)
 
 Conflicting instruction and final result at the end of the final game.
     
-    ![Conflicting instructions](/assets/images/g_key_start_game.PNG)
+![Conflicting instructions](/assets/images/g_key_start_game.PNG)
 
 An overlapping answer occures when the user enters the input before the ten seconds period expires.
 
-    ![Overlapping Answer](/assets/images/overlapping_anwers.PNG)
+![Overlapping Answer](/assets/images/overlapping_anwers.PNG)
 
 Incorrect Correct Wrong Count in the initial code version.
 
-    ![Incorrect Correct Wrong Count](/assets/images/incorect_correct_wrong_count.PNG)
+![Incorrect Correct Wrong Count](/assets/images/incorect_correct_wrong_count.PNG)
 
-    ![Correct Correct Wrong Count](/assets/images/corect_correct_wrong_count.PNG)
+![Correct Correct Wrong Count](/assets/images/corect_correct_wrong_count.PNG)
 
 The game promtly ends after the total correct/wrong answer has been printed. Solution: introduction of the users_input_start_game function.
 
-    ![Game Promtly Ends](/assets/images/deadend.PNG)
+![Game Promtly Ends](/assets/images/deadend.PNG)
 
 
 
