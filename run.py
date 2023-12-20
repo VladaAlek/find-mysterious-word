@@ -167,7 +167,7 @@ def users_input_start_game():
     Store user's choice to start the game
     """
     try:
-        start_game_choice = input("Click 🇬 to start the game, or any other key to exit!\n").lower()
+        start_game_choice = input("Type 🇬 to start the game, or any other key to exit!\n").lower()
         if start_game_choice == "g":
             return start_game_choice
         else:
