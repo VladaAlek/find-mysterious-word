@@ -225,7 +225,8 @@ clues_5 = ['It is a machine.',
 clue_sets = [
     {'clues': clues_1,
     'correct_answer': 'rome',
-    'explanation': 'Rome is the capital city of Italy (Europe), famous for its beautiful historical architecture (https://en.wikipedia.org/wiki/Spanish_Steps). Probably the most famous building is the Roman Colosseum.'},
+    'explanation': 'Rome is the capital city of Italy (Europe), famous for its beautiful historical architecture (https://en.wikipedia.org/wiki/Spanish_Steps). Probably the most famous building is the Roman Colosseum.',
+    'explanation_1' : 'It is famous for its beautiful historical architecture'},
     {'clues': clues_2,
     'correct_answer': 'hammer',
     'explanation': 'A hammer is a tool used for driving nails, breaking objects, or forging metal. It is a versatile tool with a wide range of applications.'},
@@ -256,6 +257,8 @@ def play_game():
         clues = game_data['clues']
         correct_answer = game_data['correct_answer']
         explanation = game_data.get('explanation', 'No explanation available.')
+        explanation_1 = game_data.get('explanation_1', 'No explanation available.')
+        
 
 
         # Nested loop to iterate and print the clues
@@ -277,6 +280,7 @@ def play_game():
                 print(f" is the correct answer!")
                 # Print the custom explanation for the correct answer
                 print(explanation)
+                print(explanation_1)
                 correct_count += 1
                 # Stop further iteration as the correct answer 
                 # has been provided
