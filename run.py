@@ -1,16 +1,15 @@
 import sys
 import time
 
-""" 
-import exit system func. to be used when 
-the user chose to exit the game
+#import exit system and time funcions
 
-"""
 
 def print_title():
     """
     # print the title of the game in capital letters
+
     """
+
     print("")
     print("")
     text = "Find a mysterious word in five steps"
@@ -19,7 +18,9 @@ def print_title():
     print("")
     
 def typing_greeting_message(text):
-    """ causes the letters to be presented one by one
+    """ 
+    causes the letters to be presented one by one
+
     """
     for char in text:
         #time.sleep(0.1)
@@ -30,15 +31,28 @@ def display_welcome_messages():
     """
     Welcoming message function
     """
-    greeting_message = "\nWelcome to our guessing the mysterious word game! \U0001F60E\n"
+    greeting_message = (
+    "\nWelcome to our guessing the mysterious word game!"
+    "guessing the mysterious word game!"
+    "\U0001F60E\n"
+    )
+
     typing_greeting_message(greeting_message)
-    greeting_message = "\nFollow 5 clues by filling up the input fields one after another\n"
+    greeting_message = ("\nFollow 5 clues by filling up the input fields\n"
+    "one after another\n"
+    )
     typing_greeting_message(greeting_message)
-    greeting_message = "\nto find out the mysterious term.\n"
+    greeting_message = ("\nto find out" 
+    "the mysterious term.\n"
+    )
     typing_greeting_message(greeting_message)
-    greeting_message = "\nDon't worry if you don't guess from the first attempt.\n"
+    greeting_message = ("\nDon't worry if you don't guess"
+    "from the first attempt.\n"
+    )
     typing_greeting_message(greeting_message)
-    greeting_message = "\nyou will get more signs to guide you to the victory.\n"
+    greeting_message = ("\nyou will get more signs"
+    "to guide you to the victory.\n"
+    )
     typing_greeting_message(greeting_message)
     
 
@@ -78,6 +92,7 @@ def exit_game():
 def choose_step(choice):
     """
     Function to choose between demo and play
+
     """
     if choice == 'd':
         display_intro()
@@ -142,12 +157,14 @@ def display_intro():
     print("")
     print("")
     time.sleep(2)
-    banana_text = "🙌 Congratulations, banana is the correct answer!"
+    banana_text = ("🙌 Congratulations!" 
+    "Banana is the correct answer!"
+    )
     print(banana_text.upper())
     print("")
     print("")
 
-    start_game_choice = input("Type 🇬 to play, or any button to exit!\n\n").lower()
+    start_game_choice = input("Type 🇬 to play, or any button to exit!\n").lower()
     click_game(start_game_choice)
     
     print("")
@@ -167,7 +184,8 @@ def users_input_start_game():
     Store user's choice to start the game
     """
     try:
-        start_game_choice = input("Type 🇬 to start the game, or any other key to exit!\n").lower()
+        start_game_choice = input("Type 🇬 to start the game,"
+        "or any other key to exit!\n").lower()
         if start_game_choice == "g":
             return start_game_choice
         else:
@@ -183,6 +201,21 @@ clues_1 = ['It is a city.', 'It is a capital city!',
 clues_2 = ['It is a tool.', 'It is a very common tool in many trades.',
            'Typically, it is made of wood and steel.', 
            'It is present in comic books too!', 'You have nailed it!']
+clues_3 = ['It is an animal.', 'It can fly.', 
+            'Actually, it can fly very well.',
+            'Some species have very colorful feathers.', 
+            'It likes to buzz around flowers.']
+clues_4 = ['It is a plant.',
+            'It is a very recognizable type of tree.',
+            'It can grow very big!',
+            'It is a domestic plant on the African island.',
+            'It has a massive, really massive trunk!']
+clues_5 = ['It is a machine.',
+            'It has very powerful engines.',
+            '... and some weird sticks in the driver\'s cabin',
+            'For some reason, they are usually colored in yellow.',
+            'It has a very long “arm” to move the earth.',
+            'Excavator']
 
 
 # create the dictionary containing list of strings as a values for the clues 
@@ -194,7 +227,16 @@ clue_sets = [
     'explanation': 'Rome is the capital city of Italy (Europe), famous for its beautiful historical architecture (https://en.wikipedia.org/wiki/Spanish_Steps). Probably the most famous building is the Roman Colosseum.'},
     {'clues': clues_2,
     'correct_answer': 'hammer',
-    'explanation': 'A hammer is a tool used for driving nails, breaking objects, or forging metal. It is a versatile tool with a wide range of applications.'}
+    'explanation': 'A hammer is a tool used for driving nails, breaking objects, or forging metal. It is a versatile tool with a wide range of applications.'},
+    {'clues': clues_3,
+    'correct_answer': 'colibri',
+    'explanation': 'The colibri is the smallest bird in the world, native to the Americas. It is renowned for its ability to engage in acrobatic flight and its voracious appetite for flower nectar.'},
+    {'clues': clues_4,
+    'correct_answer': 'baobab',
+    'explanation': 'Indeed, it is a fascinating tree. Capable of withstanding intense heat and prolonged drought periods, thanks to its massive trunk, this tree holds significance among the indigenous people of Africa, who associate it with spirits and supernatural forces.'},
+    {'clues': clues_5,
+    'correct_answer': 'excavator',
+    'explanation': 'Its a mean machine. Employ it when you need to move a substantial amount of dirt. The robust buckets are sizable, although a range of compact excavators tailored for urban use has surfaced. Do not ask me about the origin of that yellow color, OK!'},
 ]
 
 
