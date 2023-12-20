@@ -187,7 +187,8 @@ def users_input_start_game():
         start_game_choice = input("Type 🇬 to start the game,"
         "or any other key to exit!\n").lower()
         if start_game_choice == "g":
-            return start_game_choice
+            play_game()
+            #return start_game_choice
         else:
             exit_game()          
     except ValueError as e:
