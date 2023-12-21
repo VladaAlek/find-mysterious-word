@@ -223,22 +223,43 @@ clues_5 = ['It is a machine.',
 # and correct answers values
 
 clue_sets = [
-    {'clues': clues_1,
+    {
+    'clues': clues_1,
     'correct_answer': 'rome',
-    'explanation': 'Rome is the capital city of Italy (Europe), famous for its beautiful historical architecture (https://en.wikipedia.org/wiki/Spanish_Steps). Probably the most famous building is the Roman Colosseum.',
-    'explanation_1' : 'It is famous for its beautiful historical architecture'},
-    {'clues': clues_2,
+    'explanation' : 'Rome is the capital city of Italy (Europe)',  
+    'explanation_1' : 'It is famous for its beautiful historical architecture',
+    'explanation_2' : '(https://en.wikipedia.org/wiki/Spanish_Steps).',
+    'explanation_3' : 'The most famous building is the Roman Colosseum.'
+    },
+    {
+    'clues': clues_2,
     'correct_answer': 'hammer',
-    'explanation': 'A hammer is a tool used for driving nails, breaking objects, or forging metal. It is a versatile tool with a wide range of applications.'},
+    'explanation': 'A hammer is a versatile tool.', 
+    'explanation_1': 'It drives nails, breaks objects, or forges metal.',
+    'explanation_2': 'It is usually made of wood and steel.',
+    'explanation_3': 'Superhero Tor has the mighty hammer too.'
+    },
     {'clues': clues_3,
     'correct_answer': 'colibri',
-    'explanation': 'The colibri is the smallest bird in the world, native to the Americas. It is renowned for its ability to engage in acrobatic flight and its voracious appetite for flower nectar.'},
+    'explanation': 'The colibri is the smallest bird in the world.',
+    'explanation_1': 'It has the ability to engage in acrobatic flight',
+    'explanation_2': 'It is native to the Americas',
+    'explanation_3': 'It has voracious appetite for flower nectar'
+    },
     {'clues': clues_4,
     'correct_answer': 'baobab',
-    'explanation': 'Indeed, it is a fascinating tree. Capable of withstanding intense heat and prolonged drought periods, thanks to its massive trunk, this tree holds significance among the indigenous people of Africa, who associate it with spirits and supernatural forces.'},
+    'explanation': 'Indeed, it is a fascinating tree.',
+    'explanation_1': 'It withstands prolonged drought periods',
+    'explanation_2': 'In its massive trunk holds a lot of water',
+    'explanation_3': 'Some associate it with spirits and supernatural forces'
+    },
     {'clues': clues_5,
     'correct_answer': 'excavator',
-    'explanation': 'Its a mean machine. Employ it when you need to move a substantial amount of dirt. The robust buckets are sizable, although a range of compact excavators tailored for urban use has surfaced. Do not ask me about the origin of that yellow color, OK!'},
+    'explanation' : 'Its a realy mean machine',  
+    'explanation_1' : 'Employ it when you need to move some dirt',
+    'explanation_2' : 'Their robust buckets are sizable',
+    'explanation_3' : 'The origin of that yellow color is confusing!'
+    },
 ]
 
 
@@ -258,6 +279,8 @@ def play_game():
         correct_answer = game_data['correct_answer']
         explanation = game_data.get('explanation', 'No explanation available.')
         explanation_1 = game_data.get('explanation_1', 'No explanation available.')
+        explanation_2 = game_data.get('explanation_2', 'No explanation available.')
+        explanation_3 = game_data.get('explanation_3', 'No explanation available.')
         
 
 
@@ -277,10 +300,12 @@ def play_game():
                 # Increment the correct answer count
 
                 print(f"Congratulations, {clue_answer.capitalize()}")
-                print(f" is the correct answer!")
+                print(f"is the correct answer!")
                 # Print the custom explanation for the correct answer
                 print(explanation)
                 print(explanation_1)
+                print(explanation_2)
+                print(explanation_3)
                 correct_count += 1
                 # Stop further iteration as the correct answer 
                 # has been provided
