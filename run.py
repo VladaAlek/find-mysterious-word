@@ -214,8 +214,7 @@ clues_5 = ['It is a machine.',
             'It has very powerful engine.',
             '... and some weird sticks in the driver\'s cabin.',
             'For some reason, they are usually colored in yellow.',
-            'It has a very long “arm” to move the earth.',
-            'Excavator']
+            'It has a very long “arm” to move the earth.']
 
 
 # create the dictionary containing list of strings as a values for the clues 
