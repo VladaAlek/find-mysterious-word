@@ -49,7 +49,7 @@ def display_welcome_messages():
     " from the first attempt.\n"
     )
     typing_greeting_message(greeting_message)
-    greeting_message = ("\nYou will get more signs"
+    greeting_message = ("You will get more signs"
     " to guide you to the victory.\n"
     )
     typing_greeting_message(greeting_message)

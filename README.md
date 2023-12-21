@@ -98,7 +98,7 @@ and *CI Python Essentials - For Loop*.
 
 - Python
 
-- cloud IDE [codeanywhere.com](https://codeanywhere.com/ "codeanywhere.com")
+- cloud IDE [Codeanywhere](https://codeanywhere.com/ "codeanywhere.com")
 
 - Code editor [Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code") for writing and testing code externaly.
 
@@ -196,17 +196,17 @@ The issue was resolved by deleting the nested display_intro() from the main().
 **Exceptions raised** in the Terminal are used frequently to locate the mistakes and refactor the code.
     For instance, the scope issue was solved by introducing "return choice" in the users_input function and passing the "choice" argument into the choose_step function.
 
-    ![Name Error](/assets/images/Name_Error.png)
+ ![Name Error](/assets/images/Name_Error.png)
     
-    ![Type Error](/assets/images/Type_Error.png)
+ ![Type Error](/assets/images/Type_Error.png)
 
 Later, the same approach was used to understand which function was missing to complete the workflow of the command lines.
 
-    ![Missing Function](/assets/images/name_error_click_g.PNG)
+ ![Missing Function](/assets/images/name_error_click_g.PNG)
 
 The same tool is an efficient syntax error indicator.
 
-    ![Synthax Errors](/assets/images/synthax_error.png)
+ ![Synthax Errors](/assets/images/synthax_error.png)
 
 
 - **Python Tutor** used to monitor the execution of the Python commands.
@@ -226,11 +226,9 @@ The same tool is an efficient syntax error indicator.
     ![Staging and Pushing Issues](/assets/images/codeanywhere_unreliability%20.jpg)
     ![Staging and Pushing Solution](/assets/images/tutor_support.png)
 
-- The **Blame** option in the GitHub is used to access and examine the deployment history.
+- The [Blame](/assets/images/blame_github%201.png) option in the GitHub is used to access and examine the deployment history.
 
-    [Blame](/assets/images/blame_github%201.png)
-
-- - The **Commit** option in GitHub is used to access and examine the previous code versions.
+- The **Commit** option in GitHub is used to access and examine the previous code versions.
 
 - Issue that the time_counter function was called before all other functions or in the wrong place of the play_game function disrupting the desired line of commands.
 
@@ -240,11 +238,11 @@ The same tool is an efficient syntax error indicator.
 
 **Infinite Loop** in users_input_start_game() if the user does not input "g." Issue solved by introducing **sys.exit**. 
 
-     ![Loop](/assets/images/loop.PNG)
+![Loop](/assets/images/loop.PNG)
 
 The redundant *CTA - Call to Action* at the end of the Demo section.
 
-     ![CTA](/assets/images/users_input_start_game.PNG)
+![CTA](/assets/images/users_input_start_game.PNG)
 
 *Solution:* erase print function from the click_game function.
 
