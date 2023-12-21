@@ -2,11 +2,13 @@ import sys
 import time
 
 #import exit system and time funcions
+#to secure safe exit from the program
+#and to make time methods working
 
 
 def print_title():
     """
-    # print the title of the game in capital letters
+    print the title of the game in capital letters
 
     """
 
@@ -73,12 +75,6 @@ def users_input():
         return users_input()
 
 
-# Start game function
-#def game_start():
-    # Call the function to start the game
-    #play_game()
-
-
 def exit_game():
     """
     function to exit the game while thanking the user
@@ -104,7 +100,6 @@ def click_game(start_game_choice):
         """
         Function to start the game from the demo field
         """
-        #print("Type 🇬 to play, or any button to exit!\n")
         if start_game_choice == "g":
             play_game()
         elif start_game_choice != "g":
@@ -175,7 +170,6 @@ def click_g():
     Function to print "Click g to start the game!" text if the user 
     does not choose "g"
     """
-    #print("Click g to start the game!")
 
 
 def users_input_start_game():
@@ -187,13 +181,12 @@ def users_input_start_game():
         "or any other key to exit!\n").lower()
         if start_game_choice == "g":
             play_game()
-            #return start_game_choice
         else:
             exit_game()          
     except ValueError as e:
         print(f"Error: {e}")
 
-# each list of strings contains the clues and answers for one game
+# each list contains strings with the clues and answers for one game
 
 clues_1 = ['It is a city.', 'It is a capital city!', 
 'It is somewhere in Europe.', 'It has Spanish Steps.', 'Colosseum too.']
@@ -217,8 +210,8 @@ clues_5 = ['It is a machine.',
             'It has a very long “arm” to move the earth.']
 
 
-# create the dictionary containing list of strings as a values for the clues 
-# and correct answers values
+# list containing dictionaries of strings as a values 
+# for the clues and correct answers values
 
 clue_sets = [
     {
@@ -260,19 +253,34 @@ clue_sets = [
     },
 ]
 
+def print_all_explanations(explanation, explanation_1, explanation_2, explanation_3):
+    """function to print all explanations 
+    with the small time delay
+    """
+    print(explanation)
+    time.sleep(4)
+    print(explanation_1)
+    time.sleep(4)
+    print(explanation_2)
+    time.sleep(4)
+    print(explanation_3)
+    time.sleep(4)
 
 def play_game():
-    """Function to execute the game."""
-    # For loop to iterate through the dictionary and return clues 
-    # and correct answers
+    """
+    Function to execute the game.
+    """
     game_count = 0  # Initialize the game count
     correct_count = 0  # Initialize the correct answer count
     fail_count = 0  # Initialize the wrong answer count
+    # For loop to iterate through the dictionaries and return 
+    # clues and correct answers
     for game_data in clue_sets:
-        # Variables to store the values for clues, correct answers, 
-        # and explanation from the dictionary
+        
         game_count += 1  # Increment the game count
         print(f"\n--- Game {game_count} ---\n")
+        # Variables to store the values for clues, correct answers, 
+        # and explanations from the dictionary
         clues = game_data['clues']
         correct_answer = game_data['correct_answer']
         explanation = game_data.get('explanation')
@@ -295,19 +303,11 @@ def play_game():
             if clue_answer == correct_answer:
                 # Print "Congratulations" message and 
                 # capitalize the first letter
-                # Increment the correct answer count
-
                 print(f"Congratulations, {clue_answer.capitalize()}")
                 print(f"is the correct answer!")
-                # Print the custom explanation for the correct answer
-                print(explanation)
-                time.sleep(4)
-                print(explanation_1)
-                time.sleep(4)
-                print(explanation_2)
-                time.sleep(4)
-                print(explanation_3)
-                time.sleep(4)
+                # Print the custom explanations for the correct answer
+                print_all_explanations(explanation, explanation_1, explanation_2, explanation_3)
+                # Increment the correct answer count
                 correct_count += 1
                 # Stop further iteration as the correct answer 
                 # has been provided
@@ -322,15 +322,8 @@ def play_game():
             fail_count += 1
             print(f"Almost there, {correct_answer.capitalize()}") 
             print(f"was the correct answer.")
-            #Print the default explanation for the correct answer
-            print(explanation)
-            time.sleep(4)
-            print(explanation_1)
-            time.sleep(4)
-            print(explanation_2)
-            time.sleep(4)
-            print(explanation_3)
-            time.sleep(4)
+            #Print the default explanations for the correct answer
+            print_all_explanations(explanation, explanation_1, explanation_2, explanation_3)
     # Print the final results after all games
     print(f"\nTotal Correct Answers: {correct_count}")
     print(f"Total Wrong Answers: {fail_count}")
