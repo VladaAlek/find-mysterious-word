@@ -226,8 +226,8 @@ clue_sets = [
     {
     'clues': clues_1,
     'correct_answer': 'rome',
-    'explanation' : 'Rome is the capital city of Italy (Europe)',  
-    'explanation_1' : 'It is famous for its beautiful historical architecture',
+    'explanation' : 'Rome is the capital city of Italy (Europe).',  
+    'explanation_1' : 'It is famous for its beautiful historical architecture.',
     'explanation_2' : '(https://en.wikipedia.org/wiki/Spanish_Steps).',
     'explanation_3' : 'The most famous building is the Roman Colosseum.'
     },
