@@ -327,7 +327,7 @@ def play_game():
     # Print the final results after all games
     print(f"\nTotal Correct Answers: {correct_count}")
     print(f"Total Wrong Answers: {fail_count}")
-    users_input_start_game() 
+     
 
 
 def main():
