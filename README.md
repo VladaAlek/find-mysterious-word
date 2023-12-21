@@ -241,6 +241,19 @@ The game promtly ends after the total correct/wrong answer has been printed. Sol
 
      ![Loop](/assets/images/loop.PNG)
 
+- The redundande *CTA - Call to Action* at the end of Demo section.
+
+     ![CTA](/assets/images/users_input_start_game.PNG)
+
+*Solution:* erase print function from the click_game function.
+
+- Missing explanation when the user fails to give the correct anwer.
+
+    ![Missing Explanation](/assets/images/missing_explanation.PNG)
+
+*Solution:* add print functions in the ELSE statement of the FOR LOOP in the play_game function.
+
+
 ## Testing User Stories from the UX Section
 
 #### First-Time Visitor Goals
@@ -251,7 +264,8 @@ As a first-time visitor, clarity and quick understanding are paramount. Right of
 - **Demo Section** To increase the understanding of the game. 
 - **Dynamic features** such as *typing-machine-effect* and *temporal* elements to make the game more appealing. Additionall, *typing-machine-effect* aims to ensure that the users are familiar with the rules of the game.
 - **Visual effects**: To increase readability and the likability factor.
-- Multiple measures to improve the **navigation**. Beside multiple options when the user can chose its next step, the **game count** ensures better avarenes of the game navigation.
+- Multiple measures to improve the **navigation**. Beside multiple options when the user can chose its next step.
+- The **game count** ensures better avarenes of the users position during the game navigation.
 
 -  ![Game Counter](/assets/images/game_counter.png)
 

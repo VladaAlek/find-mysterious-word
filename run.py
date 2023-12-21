@@ -105,7 +105,7 @@ def click_game(start_game_choice):
         """
         Function to start the game from the demo field
         """
-        print("Type 🇬 to play, or any button to exit!\n")
+        #print("Type 🇬 to play, or any button to exit!\n")
         if start_game_choice == "g":
             play_game()
         elif start_game_choice != "g":
@@ -237,7 +237,7 @@ clue_sets = [
     'explanation': 'A hammer is a versatile tool.', 
     'explanation_1': 'It drives nails, breaks objects, or forges metal.',
     'explanation_2': 'It is usually made of wood and steel.',
-    'explanation_3': 'Superhero Tor has the mighty hammer too.'
+    'explanation_3': 'Superhero Thor has the mighty hammer too.'
     },
     {'clues': clues_3,
     'correct_answer': 'colibri',
@@ -318,10 +318,13 @@ def play_game():
         else:
             # Increment the wrong answer count
             fail_count += 1
-            print(f"Almost, {correct_answer.capitalize()}") 
+            print(f"Almost there, {correct_answer.capitalize()}") 
             print(f"was the correct answer.")
             #Print the default explanation for the correct answer
             print(explanation)
+            print(explanation_1)
+            print(explanation_2)
+            print(explanation_3)
     # Print the final results after all games
     print(f"\nTotal Correct Answers: {correct_count}")
     print(f"Total Wrong Answers: {fail_count}")
