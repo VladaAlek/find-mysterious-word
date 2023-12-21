@@ -23,7 +23,7 @@ def typing_greeting_message(text):
 
     """
     for char in text:
-        #time.sleep(0.1)
+        time.sleep(0.1)
         print(char, end='', flush=True)
         
 
@@ -33,25 +33,24 @@ def display_welcome_messages():
     """
     greeting_message = (
     "\nWelcome to our guessing the mysterious word game!"
-    "guessing the mysterious word game!"
     "\U0001F60E\n"
     )
 
     typing_greeting_message(greeting_message)
     greeting_message = ("\nFollow 5 clues by filling up the input fields\n"
-    "one after another\n"
+    "one after another"
     )
     typing_greeting_message(greeting_message)
-    greeting_message = ("\nto find out" 
-    "the mysterious term.\n"
+    greeting_message = (" to find out" 
+    " the mysterious term.\n"
     )
     typing_greeting_message(greeting_message)
     greeting_message = ("\nDon't worry if you don't guess"
-    "from the first attempt.\n"
+    " from the first attempt.\n"
     )
     typing_greeting_message(greeting_message)
-    greeting_message = ("\nyou will get more signs"
-    "to guide you to the victory.\n"
+    greeting_message = ("\nYou will get more signs"
+    " to guide you to the victory.\n"
     )
     typing_greeting_message(greeting_message)
     
@@ -212,8 +211,8 @@ clues_4 = ['It is a plant.',
             'It is a domestic plant on the African island.',
             'It has a massive, really massive trunk!']
 clues_5 = ['It is a machine.',
-            'It has very powerful engines.',
-            '... and some weird sticks in the driver\'s cabin',
+            'It has very powerful engine.',
+            '... and some weird sticks in the driver\'s cabin.',
             'For some reason, they are usually colored in yellow.',
             'It has a very long “arm” to move the earth.',
             'Excavator']
@@ -255,7 +254,7 @@ clue_sets = [
     },
     {'clues': clues_5,
     'correct_answer': 'excavator',
-    'explanation' : 'Its a realy mean machine!',  
+    'explanation' : 'It is a realy mean machine!',  
     'explanation_1' : 'Employ it when you need to move some dirt.',
     'explanation_2' : 'Their robust buckets are sizable.',
     'explanation_3' : 'The origin of that yellow color is confusing!'
@@ -288,7 +287,7 @@ def play_game():
         for clue in clues:
             print(clue)
             print(f"You have 10 seconds to think about the answer!")          
-            #time.sleep(10)
+            time.sleep(10)
             # Creates a variable to store the input values and transform them
             # into lowercase letters
             clue_answer = input("Please, type your answer here!\n").lower()
@@ -303,9 +302,13 @@ def play_game():
                 print(f"is the correct answer!")
                 # Print the custom explanation for the correct answer
                 print(explanation)
+                time.sleep(4)
                 print(explanation_1)
+                time.sleep(4)
                 print(explanation_2)
+                time.sleep(4)
                 print(explanation_3)
+                time.sleep(4)
                 correct_count += 1
                 # Stop further iteration as the correct answer 
                 # has been provided
@@ -322,9 +325,13 @@ def play_game():
             print(f"was the correct answer.")
             #Print the default explanation for the correct answer
             print(explanation)
+            time.sleep(4)
             print(explanation_1)
+            time.sleep(4)
             print(explanation_2)
+            time.sleep(4)
             print(explanation_3)
+            time.sleep(4)
     # Print the final results after all games
     print(f"\nTotal Correct Answers: {correct_count}")
     print(f"Total Wrong Answers: {fail_count}")
