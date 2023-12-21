@@ -242,22 +242,22 @@ clue_sets = [
     {'clues': clues_3,
     'correct_answer': 'colibri',
     'explanation': 'The colibri is the smallest bird in the world.',
-    'explanation_1': 'It has the ability to engage in acrobatic flight',
-    'explanation_2': 'It is native to the Americas',
-    'explanation_3': 'It has voracious appetite for flower nectar'
+    'explanation_1': 'It has the ability to engage in acrobatic flight.',
+    'explanation_2': 'It is native to the Americas.',
+    'explanation_3': 'It has voracious appetite for flower nectar.'
     },
     {'clues': clues_4,
     'correct_answer': 'baobab',
     'explanation': 'Indeed, it is a fascinating tree.',
-    'explanation_1': 'It withstands prolonged drought periods',
-    'explanation_2': 'In its massive trunk holds a lot of water',
-    'explanation_3': 'Some associate it with spirits and supernatural forces'
+    'explanation_1': 'It withstands prolonged drought periods.',
+    'explanation_2': 'In its massive trunk holds a lot of water.',
+    'explanation_3': 'Some associate it with spirits and supernatural forces.'
     },
     {'clues': clues_5,
     'correct_answer': 'excavator',
-    'explanation' : 'Its a realy mean machine',  
-    'explanation_1' : 'Employ it when you need to move some dirt',
-    'explanation_2' : 'Their robust buckets are sizable',
+    'explanation' : 'Its a realy mean machine!',  
+    'explanation_1' : 'Employ it when you need to move some dirt.',
+    'explanation_2' : 'Their robust buckets are sizable.',
     'explanation_3' : 'The origin of that yellow color is confusing!'
     },
 ]
@@ -277,10 +277,10 @@ def play_game():
         print(f"\n--- Game {game_count} ---\n")
         clues = game_data['clues']
         correct_answer = game_data['correct_answer']
-        explanation = game_data.get('explanation', 'No explanation available.')
-        explanation_1 = game_data.get('explanation_1', 'No explanation available.')
-        explanation_2 = game_data.get('explanation_2', 'No explanation available.')
-        explanation_3 = game_data.get('explanation_3', 'No explanation available.')
+        explanation = game_data.get('explanation')
+        explanation_1 = game_data.get('explanation_1')
+        explanation_2 = game_data.get('explanation_2')
+        explanation_3 = game_data.get('explanation_3')
         
 
 
