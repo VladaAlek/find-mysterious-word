@@ -282,16 +282,20 @@ Additionally, *typing-machine-effect* aims to ensure that the users are familiar
 ## Deployment
 
 Readme.md file deployed  in [GitHub](https://github.com/ "GitHub").
+
 Python code from the run.py file deployed in [Heroku](https://www.heroku.com/)
+
     1. problems to log in to Heroku
      - this, seemingly simple step, required the action of the CI Tutor Team and repeated intervention of the Heroku Support team.
 
-run.py file imported python-built-in modules **"import sys"** and **"import time"**. Hence, the project runs without any additional packages in the requirements.txt file. 
+run.py file imported python-built-in modules **"import sys"** and **"import time"**. Hence, the project runs without any additional packages in the requirements in txt file. 
 
 ![Heroku Deployment Problems](/assets/images/heroku_deployment_problems.png)
 
 **Codeanywhere** - frequent failures when trying to upload captures to the image folder which caused the disruption of the workflow and delays in deployment.
+
 This project contains no *credentials*.
+
 The project is released under the **Common Creatives license**, allowing for its unrestricted use by individuals and entities.
 
 ### Acknowledgments

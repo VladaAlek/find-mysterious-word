@@ -2,8 +2,8 @@ import sys
 import time
 
 #import exit system and time funcions
-#to secure safe exit from the program
-#and to make time methods working
+#to make safe exit and
+#time methods working
 
 
 def print_title():
@@ -62,7 +62,8 @@ def display_welcome_messages():
 
 def users_input():
     """
-    Function to allow the demo-game-exit navigation and to raise an exception if a typo occurs.
+    Function to allow the demo-game-exit navigation and to raise an exception 
+    if a typo occurs.
     """
     try:
         print("")
@@ -218,7 +219,7 @@ clue_sets = [
     'clues': clues_1,
     'correct_answer': 'rome',
     'explanation' : 'Rome is the capital city of Italy (Europe).',  
-    'explanation_1' : 'It is famous for its beautiful historical architecture.',
+    'explanation_1' : 'It is famous for its historical architecture.',
     'explanation_2' : '(https://en.wikipedia.org/wiki/Spanish_Steps).',
     'explanation_3' : 'The most famous building is the Roman Colosseum.'
     },
@@ -242,7 +243,7 @@ clue_sets = [
     'explanation': 'Indeed, it is a fascinating tree.',
     'explanation_1': 'It withstands prolonged drought periods.',
     'explanation_2': 'In its massive trunk holds a lot of water.',
-    'explanation_3': 'Some associate it with spirits and supernatural forces.'
+    'explanation_3': 'Some associate it with supernatural forces.'
     },
     {'clues': clues_5,
     'correct_answer': 'excavator',
